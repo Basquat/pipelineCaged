@@ -1,0 +1,430 @@
+competencia,uf,sexo,raca_cor_agrupada,lideranca,saldo,movs
+202401,AC,Homem,Amarela,False,-3,11
+202401,AC,Homem,Amarela,True,1,3
+202401,AC,Homem,Branca,False,2,12
+202401,AC,Homem,Branca,True,3,7
+202401,AC,Homem,Negra (preta+parda),False,-1,27
+202401,AC,Homem,Negra (preta+parda),True,3,7
+202401,AC,Homem,Não informada,False,1,31
+202401,AC,Homem,Não informada,True,-3,3
+202401,AC,Mulher,Amarela,False,1,7
+202401,AC,Mulher,Amarela,True,0,4
+202401,AC,Mulher,Branca,False,3,7
+202401,AC,Mulher,Branca,True,-2,4
+202401,AC,Mulher,Negra (preta+parda),False,-1,19
+202401,AC,Mulher,Negra (preta+parda),True,-4,4
+202401,AC,Mulher,Não informada,False,-1,19
+202401,AC,Mulher,Não informada,True,2,8
+202401,AL,Homem,Amarela,False,2,16
+202401,AL,Homem,Amarela,True,0,2
+202401,AL,Homem,Branca,False,2,14
+202401,AL,Homem,Branca,True,-1,7
+202401,AL,Homem,Negra (preta+parda),False,2,32
+202401,AL,Homem,Negra (preta+parda),True,-3,5
+202401,AL,Homem,Não informada,False,-5,33
+202401,AL,Homem,Não informada,True,2,6
+202401,AL,Mulher,Amarela,False,4,8
+202401,AL,Mulher,Amarela,True,1,3
+202401,AL,Mulher,Branca,False,-4,16
+202401,AL,Mulher,Branca,True,4,4
+202401,AL,Mulher,Negra (preta+parda),False,0,18
+202401,AL,Mulher,Negra (preta+parda),True,0,2
+202401,AL,Mulher,Não informada,False,-1,17
+202401,AL,Mulher,Não informada,True,1,7
+202401,AM,Homem,Amarela,False,0,18
+202401,AM,Homem,Amarela,True,1,3
+202401,AM,Homem,Branca,False,4,16
+202401,AM,Homem,Branca,True,0,4
+202401,AM,Homem,Negra (preta+parda),False,-3,25
+202401,AM,Homem,Negra (preta+parda),True,1,7
+202401,AM,Homem,Não informada,False,-2,30
+202401,AM,Homem,Não informada,True,0,2
+202401,AM,Mulher,Amarela,False,-1,9
+202401,AM,Mulher,Amarela,True,1,3
+202401,AM,Mulher,Branca,False,0,10
+202401,AM,Mulher,Branca,True,1,1
+202401,AM,Mulher,Negra (preta+parda),False,2,30
+202401,AM,Mulher,Negra (preta+parda),True,3,7
+202401,AM,Mulher,Não informada,False,-1,15
+202401,AM,Mulher,Não informada,True,0,4
+202401,AP,Homem,Amarela,False,5,13
+202401,AP,Homem,Amarela,True,0,6
+202401,AP,Homem,Branca,False,1,15
+202401,AP,Homem,Branca,True,-1,5
+202401,AP,Homem,Negra (preta+parda),False,10,24
+202401,AP,Homem,Negra (preta+parda),True,-1,5
+202401,AP,Homem,Não informada,False,3,23
+202401,AP,Homem,Não informada,True,2,6
+202401,AP,Mulher,Amarela,False,-6,8
+202401,AP,Mulher,Amarela,True,-2,4
+202401,AP,Mulher,Branca,False,3,9
+202401,AP,Mulher,Negra (preta+parda),False,3,19
+202401,AP,Mulher,Negra (preta+parda),True,2,4
+202401,AP,Mulher,Não informada,False,-1,13
+202401,AP,Mulher,Não informada,True,-2,4
+202401,BA,Homem,Amarela,False,0,18
+202401,BA,Homem,Amarela,True,1,7
+202401,BA,Homem,Branca,False,3,9
+202401,BA,Homem,Branca,True,-1,1
+202401,BA,Homem,Negra (preta+parda),False,10,36
+202401,BA,Homem,Negra (preta+parda),True,0,4
+202401,BA,Homem,Não informada,False,2,24
+202401,BA,Homem,Não informada,True,-2,4
+202401,BA,Mulher,Amarela,False,3,11
+202401,BA,Mulher,Amarela,True,-1,3
+202401,BA,Mulher,Branca,False,2,14
+202401,BA,Mulher,Branca,True,-1,5
+202401,BA,Mulher,Negra (preta+parda),False,1,23
+202401,BA,Mulher,Negra (preta+parda),True,1,5
+202401,BA,Mulher,Não informada,False,-6,36
+202401,BA,Mulher,Não informada,True,-1,11
+202401,CE,Homem,Amarela,False,1,17
+202401,CE,Homem,Amarela,True,2,4
+202401,CE,Homem,Branca,False,1,21
+202401,CE,Homem,Branca,True,2,6
+202401,CE,Homem,Negra (preta+parda),False,4,18
+202401,CE,Homem,Negra (preta+parda),True,-3,7
+202401,CE,Homem,Não informada,False,-2,20
+202401,CE,Homem,Não informada,True,6,8
+202401,CE,Mulher,Amarela,False,-5,17
+202401,CE,Mulher,Amarela,True,0,4
+202401,CE,Mulher,Branca,False,-1,11
+202401,CE,Mulher,Branca,True,-2,6
+202401,CE,Mulher,Negra (preta+parda),False,1,21
+202401,CE,Mulher,Negra (preta+parda),True,3,9
+202401,CE,Mulher,Não informada,False,3,23
+202401,CE,Mulher,Não informada,True,-1,3
+202401,DF,Homem,Amarela,False,0,18
+202401,DF,Homem,Amarela,True,2,6
+202401,DF,Homem,Branca,False,-7,21
+202401,DF,Homem,Branca,True,-1,1
+202401,DF,Homem,Negra (preta+parda),False,-1,33
+202401,DF,Homem,Negra (preta+parda),True,-1,7
+202401,DF,Homem,Não informada,False,6,22
+202401,DF,Homem,Não informada,True,1,5
+202401,DF,Mulher,Amarela,False,-3,15
+202401,DF,Mulher,Amarela,True,0,2
+202401,DF,Mulher,Branca,False,2,10
+202401,DF,Mulher,Branca,True,-1,3
+202401,DF,Mulher,Negra (preta+parda),False,-4,20
+202401,DF,Mulher,Negra (preta+parda),True,3,3
+202401,DF,Mulher,Não informada,False,-9,29
+202401,DF,Mulher,Não informada,True,-2,6
+202401,ES,Homem,Amarela,False,1,11
+202401,ES,Homem,Amarela,True,3,9
+202401,ES,Homem,Branca,False,-1,13
+202401,ES,Homem,Branca,True,-1,3
+202401,ES,Homem,Negra (preta+parda),False,0,30
+202401,ES,Homem,Negra (preta+parda),True,-2,4
+202401,ES,Homem,Não informada,False,-10,28
+202401,ES,Homem,Não informada,True,-1,5
+202401,ES,Mulher,Amarela,False,2,12
+202401,ES,Mulher,Amarela,True,0,4
+202401,ES,Mulher,Branca,False,5,9
+202401,ES,Mulher,Branca,True,0,4
+202401,ES,Mulher,Negra (preta+parda),False,-4,10
+202401,ES,Mulher,Negra (preta+parda),True,2,6
+202401,ES,Mulher,Não informada,False,10,26
+202401,ES,Mulher,Não informada,True,2,6
+202401,GO,Homem,Amarela,False,8,12
+202401,GO,Homem,Amarela,True,-2,4
+202401,GO,Homem,Branca,False,-4,12
+202401,GO,Homem,Branca,True,-1,5
+202401,GO,Homem,Negra (preta+parda),False,0,28
+202401,GO,Homem,Negra (preta+parda),True,3,9
+202401,GO,Homem,Não informada,False,8,26
+202401,GO,Homem,Não informada,True,1,9
+202401,GO,Mulher,Amarela,False,1,9
+202401,GO,Mulher,Amarela,True,-1,3
+202401,GO,Mulher,Branca,False,-1,9
+202401,GO,Mulher,Branca,True,1,1
+202401,GO,Mulher,Negra (preta+parda),False,7,33
+202401,GO,Mulher,Negra (preta+parda),True,0,4
+202401,GO,Mulher,Não informada,False,2,20
+202401,GO,Mulher,Não informada,True,-1,5
+202401,MA,Homem,Amarela,False,1,15
+202401,MA,Homem,Amarela,True,0,2
+202401,MA,Homem,Branca,False,1,15
+202401,MA,Homem,Branca,True,1,3
+202401,MA,Homem,Negra (preta+parda),False,-9,29
+202401,MA,Homem,Negra (preta+parda),True,2,8
+202401,MA,Homem,Não informada,False,3,23
+202401,MA,Homem,Não informada,True,2,2
+202401,MA,Mulher,Amarela,False,1,9
+202401,MA,Mulher,Amarela,True,-4,6
+202401,MA,Mulher,Branca,False,-1,17
+202401,MA,Mulher,Branca,True,1,3
+202401,MA,Mulher,Negra (preta+parda),False,0,24
+202401,MA,Mulher,Negra (preta+parda),True,1,7
+202401,MA,Mulher,Não informada,False,-8,28
+202401,MA,Mulher,Não informada,True,-2,4
+202401,MG,Homem,Amarela,False,7,17
+202401,MG,Homem,Amarela,True,1,3
+202401,MG,Homem,Branca,False,-1,9
+202401,MG,Homem,Branca,True,1,3
+202401,MG,Homem,Negra (preta+parda),False,-4,28
+202401,MG,Homem,Negra (preta+parda),True,0,4
+202401,MG,Homem,Não informada,False,4,16
+202401,MG,Homem,Não informada,True,0,6
+202401,MG,Mulher,Amarela,False,0,12
+202401,MG,Mulher,Amarela,True,-2,4
+202401,MG,Mulher,Branca,False,0,12
+202401,MG,Mulher,Branca,True,0,4
+202401,MG,Mulher,Negra (preta+parda),False,7,17
+202401,MG,Mulher,Negra (preta+parda),True,-2,4
+202401,MG,Mulher,Não informada,False,0,30
+202401,MG,Mulher,Não informada,True,2,4
+202401,MS,Homem,Amarela,False,-5,17
+202401,MS,Homem,Amarela,True,-1,1
+202401,MS,Homem,Branca,False,-3,17
+202401,MS,Homem,Branca,True,-2,2
+202401,MS,Homem,Negra (preta+parda),False,1,29
+202401,MS,Homem,Negra (preta+parda),True,0,8
+202401,MS,Homem,Não informada,False,1,29
+202401,MS,Homem,Não informada,True,-2,6
+202401,MS,Mulher,Amarela,False,2,8
+202401,MS,Mulher,Amarela,True,3,5
+202401,MS,Mulher,Branca,False,1,9
+202401,MS,Mulher,Branca,True,-1,3
+202401,MS,Mulher,Negra (preta+parda),False,6,26
+202401,MS,Mulher,Negra (preta+parda),True,3,5
+202401,MS,Mulher,Não informada,False,1,17
+202401,MS,Mulher,Não informada,True,0,2
+202401,MT,Homem,Amarela,False,-2,14
+202401,MT,Homem,Amarela,True,-3,3
+202401,MT,Homem,Branca,False,-5,13
+202401,MT,Homem,Branca,True,6,6
+202401,MT,Homem,Negra (preta+parda),False,-1,21
+202401,MT,Homem,Negra (preta+parda),True,3,11
+202401,MT,Homem,Não informada,False,-2,30
+202401,MT,Homem,Não informada,True,0,10
+202401,MT,Mulher,Amarela,False,-2,10
+202401,MT,Mulher,Amarela,True,-2,4
+202401,MT,Mulher,Branca,False,-1,9
+202401,MT,Mulher,Branca,True,-1,3
+202401,MT,Mulher,Negra (preta+parda),False,2,26
+202401,MT,Mulher,Negra (preta+parda),True,-1,5
+202401,MT,Mulher,Não informada,False,3,19
+202401,MT,Mulher,Não informada,True,-1,7
+202401,PA,Homem,Amarela,False,-7,17
+202401,PA,Homem,Amarela,True,-1,3
+202401,PA,Homem,Branca,False,7,15
+202401,PA,Homem,Branca,True,2,4
+202401,PA,Homem,Negra (preta+parda),False,12,22
+202401,PA,Homem,Negra (preta+parda),True,2,6
+202401,PA,Homem,Não informada,False,-2,30
+202401,PA,Homem,Não informada,True,0,10
+202401,PA,Mulher,Amarela,False,-4,16
+202401,PA,Mulher,Branca,False,-2,12
+202401,PA,Mulher,Branca,True,-1,1
+202401,PA,Mulher,Negra (preta+parda),False,7,17
+202401,PA,Mulher,Negra (preta+parda),True,1,5
+202401,PA,Mulher,Não informada,False,6,14
+202401,PA,Mulher,Não informada,True,1,7
+202401,PB,Homem,Amarela,False,0,14
+202401,PB,Homem,Amarela,True,0,4
+202401,PB,Homem,Branca,False,7,13
+202401,PB,Homem,Branca,True,3,5
+202401,PB,Homem,Negra (preta+parda),False,-2,34
+202401,PB,Homem,Negra (preta+parda),True,5,5
+202401,PB,Homem,Não informada,False,0,26
+202401,PB,Homem,Não informada,True,-3,7
+202401,PB,Mulher,Amarela,False,5,13
+202401,PB,Mulher,Amarela,True,1,5
+202401,PB,Mulher,Branca,False,1,11
+202401,PB,Mulher,Branca,True,-1,1
+202401,PB,Mulher,Negra (preta+parda),False,-2,18
+202401,PB,Mulher,Negra (preta+parda),True,-2,6
+202401,PB,Mulher,Não informada,False,-2,18
+202401,PB,Mulher,Não informada,True,-4,4
+202401,PE,Homem,Amarela,False,3,13
+202401,PE,Homem,Amarela,True,1,3
+202401,PE,Homem,Branca,False,3,9
+202401,PE,Homem,Branca,True,0,4
+202401,PE,Homem,Negra (preta+parda),False,3,29
+202401,PE,Homem,Negra (preta+parda),True,4,8
+202401,PE,Homem,Não informada,False,0,26
+202401,PE,Homem,Não informada,True,5,5
+202401,PE,Mulher,Amarela,False,-5,15
+202401,PE,Mulher,Amarela,True,-2,2
+202401,PE,Mulher,Branca,False,-2,8
+202401,PE,Mulher,Branca,True,1,3
+202401,PE,Mulher,Negra (preta+parda),False,-3,23
+202401,PE,Mulher,Negra (preta+parda),True,4,4
+202401,PE,Mulher,Não informada,False,-3,23
+202401,PE,Mulher,Não informada,True,-3,5
+202401,PI,Homem,Amarela,False,2,8
+202401,PI,Homem,Amarela,True,1,1
+202401,PI,Homem,Branca,False,0,12
+202401,PI,Homem,Branca,True,0,4
+202401,PI,Homem,Negra (preta+parda),False,-1,25
+202401,PI,Homem,Negra (preta+parda),True,2,4
+202401,PI,Homem,Não informada,False,1,25
+202401,PI,Homem,Não informada,True,3,9
+202401,PI,Mulher,Amarela,False,-1,9
+202401,PI,Mulher,Amarela,True,-2,4
+202401,PI,Mulher,Branca,False,-7,17
+202401,PI,Mulher,Branca,True,2,6
+202401,PI,Mulher,Negra (preta+parda),False,-5,27
+202401,PI,Mulher,Negra (preta+parda),True,0,2
+202401,PI,Mulher,Não informada,False,4,18
+202401,PI,Mulher,Não informada,True,-1,1
+202401,PR,Homem,Amarela,False,2,10
+202401,PR,Homem,Amarela,True,0,2
+202401,PR,Homem,Branca,False,6,14
+202401,PR,Homem,Branca,True,1,1
+202401,PR,Homem,Negra (preta+parda),False,-5,29
+202401,PR,Homem,Negra (preta+parda),True,2,6
+202401,PR,Homem,Não informada,False,-1,33
+202401,PR,Homem,Não informada,True,-1,3
+202401,PR,Mulher,Amarela,False,-3,13
+202401,PR,Mulher,Amarela,True,-1,1
+202401,PR,Mulher,Branca,False,1,5
+202401,PR,Mulher,Branca,True,2,4
+202401,PR,Mulher,Negra (preta+parda),False,-2,14
+202401,PR,Mulher,Negra (preta+parda),True,0,8
+202401,PR,Mulher,Não informada,False,6,24
+202401,PR,Mulher,Não informada,True,-6,6
+202401,RJ,Homem,Amarela,False,0,12
+202401,RJ,Homem,Amarela,True,2,4
+202401,RJ,Homem,Branca,False,1,13
+202401,RJ,Homem,Branca,True,2,4
+202401,RJ,Homem,Negra (preta+parda),False,0,30
+202401,RJ,Homem,Negra (preta+parda),True,3,7
+202401,RJ,Homem,Não informada,False,-2,28
+202401,RJ,Homem,Não informada,True,1,5
+202401,RJ,Mulher,Amarela,False,-4,10
+202401,RJ,Mulher,Branca,False,-1,9
+202401,RJ,Mulher,Branca,True,-1,1
+202401,RJ,Mulher,Negra (preta+parda),False,-6,22
+202401,RJ,Mulher,Negra (preta+parda),True,-2,6
+202401,RJ,Mulher,Não informada,False,-1,19
+202401,RJ,Mulher,Não informada,True,-2,2
+202401,RN,Homem,Amarela,False,1,17
+202401,RN,Homem,Amarela,True,0,2
+202401,RN,Homem,Branca,False,-2,16
+202401,RN,Homem,Branca,True,0,4
+202401,RN,Homem,Negra (preta+parda),False,0,20
+202401,RN,Homem,Negra (preta+parda),True,3,9
+202401,RN,Homem,Não informada,False,-1,27
+202401,RN,Homem,Não informada,True,-2,4
+202401,RN,Mulher,Amarela,False,-1,15
+202401,RN,Mulher,Amarela,True,2,4
+202401,RN,Mulher,Branca,False,-3,13
+202401,RN,Mulher,Branca,True,0,2
+202401,RN,Mulher,Negra (preta+parda),False,11,17
+202401,RN,Mulher,Negra (preta+parda),True,-2,4
+202401,RN,Mulher,Não informada,False,-5,25
+202401,RN,Mulher,Não informada,True,2,4
+202401,RO,Homem,Amarela,False,-2,18
+202401,RO,Homem,Amarela,True,-2,4
+202401,RO,Homem,Branca,False,-3,15
+202401,RO,Homem,Branca,True,2,4
+202401,RO,Homem,Negra (preta+parda),False,-2,26
+202401,RO,Homem,Negra (preta+parda),True,-2,10
+202401,RO,Homem,Não informada,False,-6,32
+202401,RO,Homem,Não informada,True,-3,11
+202401,RO,Mulher,Amarela,False,-6,10
+202401,RO,Mulher,Amarela,True,1,3
+202401,RO,Mulher,Branca,False,-2,16
+202401,RO,Mulher,Branca,True,-2,2
+202401,RO,Mulher,Negra (preta+parda),False,0,26
+202401,RO,Mulher,Negra (preta+parda),True,2,6
+202401,RO,Mulher,Não informada,False,0,20
+202401,RO,Mulher,Não informada,True,-2,4
+202401,RR,Homem,Amarela,False,6,12
+202401,RR,Homem,Amarela,True,3,3
+202401,RR,Homem,Branca,False,1,11
+202401,RR,Homem,Branca,True,-3,3
+202401,RR,Homem,Negra (preta+parda),False,-10,34
+202401,RR,Homem,Negra (preta+parda),True,0,6
+202401,RR,Homem,Não informada,False,-5,29
+202401,RR,Homem,Não informada,True,1,5
+202401,RR,Mulher,Amarela,False,-2,10
+202401,RR,Mulher,Amarela,True,1,1
+202401,RR,Mulher,Branca,False,3,13
+202401,RR,Mulher,Branca,True,-2,6
+202401,RR,Mulher,Negra (preta+parda),False,-9,25
+202401,RR,Mulher,Negra (preta+parda),True,2,4
+202401,RR,Mulher,Não informada,False,-1,21
+202401,RR,Mulher,Não informada,True,-6,6
+202401,RS,Homem,Amarela,False,6,12
+202401,RS,Homem,Amarela,True,0,4
+202401,RS,Homem,Branca,False,-1,11
+202401,RS,Homem,Branca,True,-3,3
+202401,RS,Homem,Negra (preta+parda),False,-8,22
+202401,RS,Homem,Negra (preta+parda),True,1,3
+202401,RS,Homem,Não informada,False,2,38
+202401,RS,Homem,Não informada,True,3,11
+202401,RS,Mulher,Amarela,False,0,12
+202401,RS,Mulher,Amarela,True,2,2
+202401,RS,Mulher,Branca,False,-6,14
+202401,RS,Mulher,Branca,True,-6,6
+202401,RS,Mulher,Negra (preta+parda),False,3,31
+202401,RS,Mulher,Negra (preta+parda),True,0,8
+202401,RS,Mulher,Não informada,False,1,19
+202401,RS,Mulher,Não informada,True,-4,4
+202401,SC,Homem,Amarela,False,-4,10
+202401,SC,Homem,Amarela,True,-2,2
+202401,SC,Homem,Branca,False,-6,14
+202401,SC,Homem,Branca,True,-1,3
+202401,SC,Homem,Negra (preta+parda),False,-3,25
+202401,SC,Homem,Negra (preta+parda),True,-2,6
+202401,SC,Homem,Não informada,False,-3,27
+202401,SC,Homem,Não informada,True,0,10
+202401,SC,Mulher,Amarela,False,0,12
+202401,SC,Mulher,Amarela,True,-2,2
+202401,SC,Mulher,Branca,False,0,16
+202401,SC,Mulher,Branca,True,0,2
+202401,SC,Mulher,Negra (preta+parda),False,-3,17
+202401,SC,Mulher,Negra (preta+parda),True,-1,3
+202401,SC,Mulher,Não informada,False,-1,27
+202401,SC,Mulher,Não informada,True,1,1
+202401,SE,Homem,Amarela,False,2,8
+202401,SE,Homem,Amarela,True,-2,2
+202401,SE,Homem,Branca,False,-1,11
+202401,SE,Homem,Branca,True,0,2
+202401,SE,Homem,Negra (preta+parda),False,4,22
+202401,SE,Homem,Negra (preta+parda),True,-3,9
+202401,SE,Homem,Não informada,False,4,24
+202401,SE,Homem,Não informada,True,6,16
+202401,SE,Mulher,Amarela,False,-2,16
+202401,SE,Mulher,Amarela,True,2,4
+202401,SE,Mulher,Branca,False,0,14
+202401,SE,Mulher,Branca,True,0,2
+202401,SE,Mulher,Negra (preta+parda),False,-2,14
+202401,SE,Mulher,Negra (preta+parda),True,0,8
+202401,SE,Mulher,Não informada,False,4,8
+202401,SE,Mulher,Não informada,True,2,4
+202401,SP,Homem,Amarela,False,-8,16
+202401,SP,Homem,Amarela,True,-2,4
+202401,SP,Homem,Branca,False,2,8
+202401,SP,Homem,Branca,True,2,2
+202401,SP,Homem,Negra (preta+parda),False,7,27
+202401,SP,Homem,Negra (preta+parda),True,1,9
+202401,SP,Homem,Não informada,False,0,28
+202401,SP,Homem,Não informada,True,0,6
+202401,SP,Mulher,Amarela,False,1,11
+202401,SP,Mulher,Amarela,True,-1,1
+202401,SP,Mulher,Branca,False,-4,8
+202401,SP,Mulher,Branca,True,-1,3
+202401,SP,Mulher,Negra (preta+parda),False,9,23
+202401,SP,Mulher,Negra (preta+parda),True,1,3
+202401,SP,Mulher,Não informada,False,-3,19
+202401,SP,Mulher,Não informada,True,2,6
+202401,TO,Homem,Amarela,False,-1,7
+202401,TO,Homem,Amarela,True,-2,6
+202401,TO,Homem,Branca,False,-1,13
+202401,TO,Homem,Branca,True,-1,3
+202401,TO,Homem,Negra (preta+parda),False,-6,22
+202401,TO,Homem,Negra (preta+parda),True,1,7
+202401,TO,Homem,Não informada,False,4,18
+202401,TO,Homem,Não informada,True,0,6
+202401,TO,Mulher,Amarela,False,5,15
+202401,TO,Mulher,Amarela,True,-5,5
+202401,TO,Mulher,Branca,False,0,8
+202401,TO,Mulher,Branca,True,1,3
+202401,TO,Mulher,Negra (preta+parda),False,-2,30
+202401,TO,Mulher,Negra (preta+parda),True,3,7
+202401,TO,Mulher,Não informada,False,0,22
+202401,TO,Mulher,Não informada,True,-1,5

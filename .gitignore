@@ -1,0 +1,6 @@
+data/raw/*
+data/interim/*
+!data/*/.gitkeep
+__pycache__/
+.venv/
+*.7z

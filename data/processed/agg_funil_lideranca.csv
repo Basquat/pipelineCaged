@@ -1,0 +1,946 @@
+ano,uf,sexo,raca_cor_agrupada,grande_grupo_nome,admissoes,pct_no_grupo_demografico
+2024,AC,Homem,Amarela,Dirigentes e gerentes,2,33.333
+2024,AC,Homem,Amarela,Produção industrial (bens e serviços),1,16.667
+2024,AC,Homem,Amarela,Serviços administrativos,1,16.667
+2024,AC,Homem,Amarela,Serviços e comércio,2,33.333
+2024,AC,Homem,Branca,Dirigentes e gerentes,5,41.667
+2024,AC,Homem,Branca,Produção industrial (bens e serviços),2,16.667
+2024,AC,Homem,Branca,Serviços administrativos,3,25.0
+2024,AC,Homem,Branca,Serviços e comércio,2,16.667
+2024,AC,Homem,Negra (preta+parda),Dirigentes e gerentes,5,27.778
+2024,AC,Homem,Negra (preta+parda),Produção industrial (bens e serviços),3,16.667
+2024,AC,Homem,Negra (preta+parda),Profissionais das ciências e artes,1,5.556
+2024,AC,Homem,Negra (preta+parda),Serviços administrativos,4,22.222
+2024,AC,Homem,Negra (preta+parda),Serviços e comércio,5,27.778
+2024,AC,Homem,Não informada,Produção industrial (bens e serviços),2,12.5
+2024,AC,Homem,Não informada,Profissionais das ciências e artes,4,25.0
+2024,AC,Homem,Não informada,Serviços administrativos,3,18.75
+2024,AC,Homem,Não informada,Serviços e comércio,7,43.75
+2024,AC,Mulher,Amarela,Dirigentes e gerentes,2,33.333
+2024,AC,Mulher,Amarela,Produção industrial (bens e serviços),2,33.333
+2024,AC,Mulher,Amarela,Serviços administrativos,2,33.333
+2024,AC,Mulher,Branca,Dirigentes e gerentes,1,16.667
+2024,AC,Mulher,Branca,Produção industrial (bens e serviços),2,33.333
+2024,AC,Mulher,Branca,Serviços administrativos,1,16.667
+2024,AC,Mulher,Branca,Serviços e comércio,2,33.333
+2024,AC,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),2,22.222
+2024,AC,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,22.222
+2024,AC,Mulher,Negra (preta+parda),Serviços administrativos,4,44.444
+2024,AC,Mulher,Negra (preta+parda),Serviços e comércio,1,11.111
+2024,AC,Mulher,Não informada,Dirigentes e gerentes,5,35.714
+2024,AC,Mulher,Não informada,Produção industrial (bens e serviços),4,28.571
+2024,AC,Mulher,Não informada,Profissionais das ciências e artes,3,21.429
+2024,AC,Mulher,Não informada,Serviços administrativos,2,14.286
+2024,AL,Homem,Amarela,Dirigentes e gerentes,1,10.0
+2024,AL,Homem,Amarela,Produção industrial (bens e serviços),2,20.0
+2024,AL,Homem,Amarela,Profissionais das ciências e artes,1,10.0
+2024,AL,Homem,Amarela,Serviços administrativos,3,30.0
+2024,AL,Homem,Amarela,Serviços e comércio,3,30.0
+2024,AL,Homem,Branca,Dirigentes e gerentes,3,27.273
+2024,AL,Homem,Branca,Produção industrial (bens e serviços),2,18.182
+2024,AL,Homem,Branca,Profissionais das ciências e artes,2,18.182
+2024,AL,Homem,Branca,Serviços administrativos,3,27.273
+2024,AL,Homem,Branca,Serviços e comércio,1,9.091
+2024,AL,Homem,Negra (preta+parda),Dirigentes e gerentes,1,5.556
+2024,AL,Homem,Negra (preta+parda),Produção industrial (bens e serviços),3,16.667
+2024,AL,Homem,Negra (preta+parda),Profissionais das ciências e artes,4,22.222
+2024,AL,Homem,Negra (preta+parda),Serviços administrativos,5,27.778
+2024,AL,Homem,Negra (preta+parda),Serviços e comércio,5,27.778
+2024,AL,Homem,Não informada,Dirigentes e gerentes,4,22.222
+2024,AL,Homem,Não informada,Produção industrial (bens e serviços),4,22.222
+2024,AL,Homem,Não informada,Profissionais das ciências e artes,3,16.667
+2024,AL,Homem,Não informada,Serviços administrativos,3,16.667
+2024,AL,Homem,Não informada,Serviços e comércio,4,22.222
+2024,AL,Mulher,Amarela,Dirigentes e gerentes,2,25.0
+2024,AL,Mulher,Amarela,Produção industrial (bens e serviços),1,12.5
+2024,AL,Mulher,Amarela,Serviços administrativos,4,50.0
+2024,AL,Mulher,Amarela,Serviços e comércio,1,12.5
+2024,AL,Mulher,Branca,Dirigentes e gerentes,4,40.0
+2024,AL,Mulher,Branca,Produção industrial (bens e serviços),1,10.0
+2024,AL,Mulher,Branca,Profissionais das ciências e artes,2,20.0
+2024,AL,Mulher,Branca,Serviços administrativos,2,20.0
+2024,AL,Mulher,Branca,Serviços e comércio,1,10.0
+2024,AL,Mulher,Negra (preta+parda),Dirigentes e gerentes,1,10.0
+2024,AL,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),3,30.0
+2024,AL,Mulher,Negra (preta+parda),Profissionais das ciências e artes,1,10.0
+2024,AL,Mulher,Negra (preta+parda),Serviços administrativos,4,40.0
+2024,AL,Mulher,Negra (preta+parda),Serviços e comércio,1,10.0
+2024,AL,Mulher,Não informada,Dirigentes e gerentes,4,33.333
+2024,AL,Mulher,Não informada,Produção industrial (bens e serviços),4,33.333
+2024,AL,Mulher,Não informada,Profissionais das ciências e artes,2,16.667
+2024,AL,Mulher,Não informada,Serviços e comércio,2,16.667
+2024,AM,Homem,Amarela,Dirigentes e gerentes,2,18.182
+2024,AM,Homem,Amarela,Profissionais das ciências e artes,4,36.364
+2024,AM,Homem,Amarela,Serviços administrativos,4,36.364
+2024,AM,Homem,Amarela,Serviços e comércio,1,9.091
+2024,AM,Homem,Branca,Dirigentes e gerentes,2,16.667
+2024,AM,Homem,Branca,Produção industrial (bens e serviços),4,33.333
+2024,AM,Homem,Branca,Serviços administrativos,3,25.0
+2024,AM,Homem,Branca,Serviços e comércio,3,25.0
+2024,AM,Homem,Negra (preta+parda),Dirigentes e gerentes,4,26.667
+2024,AM,Homem,Negra (preta+parda),Produção industrial (bens e serviços),2,13.333
+2024,AM,Homem,Negra (preta+parda),Profissionais das ciências e artes,3,20.0
+2024,AM,Homem,Negra (preta+parda),Serviços administrativos,3,20.0
+2024,AM,Homem,Negra (preta+parda),Serviços e comércio,3,20.0
+2024,AM,Homem,Não informada,Dirigentes e gerentes,1,6.667
+2024,AM,Homem,Não informada,Produção industrial (bens e serviços),4,26.667
+2024,AM,Homem,Não informada,Profissionais das ciências e artes,2,13.333
+2024,AM,Homem,Não informada,Serviços administrativos,3,20.0
+2024,AM,Homem,Não informada,Serviços e comércio,5,33.333
+2024,AM,Mulher,Amarela,Dirigentes e gerentes,2,33.333
+2024,AM,Mulher,Amarela,Produção industrial (bens e serviços),1,16.667
+2024,AM,Mulher,Amarela,Profissionais das ciências e artes,1,16.667
+2024,AM,Mulher,Amarela,Serviços e comércio,2,33.333
+2024,AM,Mulher,Branca,Dirigentes e gerentes,1,16.667
+2024,AM,Mulher,Branca,Profissionais das ciências e artes,2,33.333
+2024,AM,Mulher,Branca,Serviços administrativos,1,16.667
+2024,AM,Mulher,Branca,Serviços e comércio,2,33.333
+2024,AM,Mulher,Negra (preta+parda),Dirigentes e gerentes,5,23.81
+2024,AM,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),4,19.048
+2024,AM,Mulher,Negra (preta+parda),Profissionais das ciências e artes,7,33.333
+2024,AM,Mulher,Negra (preta+parda),Serviços administrativos,4,19.048
+2024,AM,Mulher,Negra (preta+parda),Serviços e comércio,1,4.762
+2024,AM,Mulher,Não informada,Dirigentes e gerentes,2,22.222
+2024,AM,Mulher,Não informada,Produção industrial (bens e serviços),5,55.556
+2024,AM,Mulher,Não informada,Profissionais das ciências e artes,1,11.111
+2024,AM,Mulher,Não informada,Serviços e comércio,1,11.111
+2024,AP,Homem,Amarela,Dirigentes e gerentes,3,25.0
+2024,AP,Homem,Amarela,Produção industrial (bens e serviços),3,25.0
+2024,AP,Homem,Amarela,Profissionais das ciências e artes,2,16.667
+2024,AP,Homem,Amarela,Serviços e comércio,4,33.333
+2024,AP,Homem,Branca,Dirigentes e gerentes,2,20.0
+2024,AP,Homem,Branca,Produção industrial (bens e serviços),2,20.0
+2024,AP,Homem,Branca,Profissionais das ciências e artes,5,50.0
+2024,AP,Homem,Branca,Serviços e comércio,1,10.0
+2024,AP,Homem,Negra (preta+parda),Dirigentes e gerentes,2,10.526
+2024,AP,Homem,Negra (preta+parda),Produção industrial (bens e serviços),3,15.789
+2024,AP,Homem,Negra (preta+parda),Profissionais das ciências e artes,7,36.842
+2024,AP,Homem,Negra (preta+parda),Serviços administrativos,2,10.526
+2024,AP,Homem,Negra (preta+parda),Serviços e comércio,5,26.316
+2024,AP,Homem,Não informada,Dirigentes e gerentes,4,23.529
+2024,AP,Homem,Não informada,Produção industrial (bens e serviços),4,23.529
+2024,AP,Homem,Não informada,Profissionais das ciências e artes,2,11.765
+2024,AP,Homem,Não informada,Serviços administrativos,6,35.294
+2024,AP,Homem,Não informada,Serviços e comércio,1,5.882
+2024,AP,Mulher,Amarela,Dirigentes e gerentes,1,50.0
+2024,AP,Mulher,Amarela,Serviços administrativos,1,50.0
+2024,AP,Mulher,Branca,Produção industrial (bens e serviços),2,33.333
+2024,AP,Mulher,Branca,Serviços administrativos,1,16.667
+2024,AP,Mulher,Branca,Serviços e comércio,3,50.0
+2024,AP,Mulher,Negra (preta+parda),Dirigentes e gerentes,3,21.429
+2024,AP,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),2,14.286
+2024,AP,Mulher,Negra (preta+parda),Profissionais das ciências e artes,3,21.429
+2024,AP,Mulher,Negra (preta+parda),Serviços administrativos,5,35.714
+2024,AP,Mulher,Negra (preta+parda),Serviços e comércio,1,7.143
+2024,AP,Mulher,Não informada,Dirigentes e gerentes,1,14.286
+2024,AP,Mulher,Não informada,Profissionais das ciências e artes,1,14.286
+2024,AP,Mulher,Não informada,Serviços administrativos,1,14.286
+2024,AP,Mulher,Não informada,Serviços e comércio,4,57.143
+2024,BA,Homem,Amarela,Dirigentes e gerentes,4,30.769
+2024,BA,Homem,Amarela,Profissionais das ciências e artes,3,23.077
+2024,BA,Homem,Amarela,Serviços administrativos,2,15.385
+2024,BA,Homem,Amarela,Serviços e comércio,4,30.769
+2024,BA,Homem,Branca,Serviços administrativos,2,33.333
+2024,BA,Homem,Branca,Serviços e comércio,4,66.667
+2024,BA,Homem,Negra (preta+parda),Dirigentes e gerentes,2,8.0
+2024,BA,Homem,Negra (preta+parda),Produção industrial (bens e serviços),6,24.0
+2024,BA,Homem,Negra (preta+parda),Profissionais das ciências e artes,9,36.0
+2024,BA,Homem,Negra (preta+parda),Serviços administrativos,4,16.0
+2024,BA,Homem,Negra (preta+parda),Serviços e comércio,4,16.0
+2024,BA,Homem,Não informada,Dirigentes e gerentes,1,7.143
+2024,BA,Homem,Não informada,Produção industrial (bens e serviços),4,28.571
+2024,BA,Homem,Não informada,Profissionais das ciências e artes,4,28.571
+2024,BA,Homem,Não informada,Serviços administrativos,2,14.286
+2024,BA,Homem,Não informada,Serviços e comércio,3,21.429
+2024,BA,Mulher,Amarela,Dirigentes e gerentes,1,12.5
+2024,BA,Mulher,Amarela,Produção industrial (bens e serviços),1,12.5
+2024,BA,Mulher,Amarela,Profissionais das ciências e artes,1,12.5
+2024,BA,Mulher,Amarela,Serviços administrativos,1,12.5
+2024,BA,Mulher,Amarela,Serviços e comércio,4,50.0
+2024,BA,Mulher,Branca,Dirigentes e gerentes,2,20.0
+2024,BA,Mulher,Branca,Produção industrial (bens e serviços),1,10.0
+2024,BA,Mulher,Branca,Profissionais das ciências e artes,2,20.0
+2024,BA,Mulher,Branca,Serviços administrativos,3,30.0
+2024,BA,Mulher,Branca,Serviços e comércio,2,20.0
+2024,BA,Mulher,Negra (preta+parda),Dirigentes e gerentes,3,20.0
+2024,BA,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),5,33.333
+2024,BA,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,13.333
+2024,BA,Mulher,Negra (preta+parda),Serviços administrativos,3,20.0
+2024,BA,Mulher,Negra (preta+parda),Serviços e comércio,2,13.333
+2024,BA,Mulher,Não informada,Dirigentes e gerentes,5,25.0
+2024,BA,Mulher,Não informada,Produção industrial (bens e serviços),2,10.0
+2024,BA,Mulher,Não informada,Profissionais das ciências e artes,7,35.0
+2024,BA,Mulher,Não informada,Serviços administrativos,3,15.0
+2024,BA,Mulher,Não informada,Serviços e comércio,3,15.0
+2024,CE,Homem,Amarela,Dirigentes e gerentes,3,25.0
+2024,CE,Homem,Amarela,Produção industrial (bens e serviços),1,8.333
+2024,CE,Homem,Amarela,Profissionais das ciências e artes,3,25.0
+2024,CE,Homem,Amarela,Serviços administrativos,3,25.0
+2024,CE,Homem,Amarela,Serviços e comércio,2,16.667
+2024,CE,Homem,Branca,Dirigentes e gerentes,4,26.667
+2024,CE,Homem,Branca,Produção industrial (bens e serviços),1,6.667
+2024,CE,Homem,Branca,Profissionais das ciências e artes,2,13.333
+2024,CE,Homem,Branca,Serviços administrativos,4,26.667
+2024,CE,Homem,Branca,Serviços e comércio,4,26.667
+2024,CE,Homem,Negra (preta+parda),Dirigentes e gerentes,2,15.385
+2024,CE,Homem,Negra (preta+parda),Produção industrial (bens e serviços),2,15.385
+2024,CE,Homem,Negra (preta+parda),Profissionais das ciências e artes,5,38.462
+2024,CE,Homem,Negra (preta+parda),Serviços administrativos,2,15.385
+2024,CE,Homem,Negra (preta+parda),Serviços e comércio,2,15.385
+2024,CE,Homem,Não informada,Dirigentes e gerentes,7,43.75
+2024,CE,Homem,Não informada,Produção industrial (bens e serviços),2,12.5
+2024,CE,Homem,Não informada,Profissionais das ciências e artes,2,12.5
+2024,CE,Homem,Não informada,Serviços administrativos,2,12.5
+2024,CE,Homem,Não informada,Serviços e comércio,3,18.75
+2024,CE,Mulher,Amarela,Dirigentes e gerentes,2,25.0
+2024,CE,Mulher,Amarela,Produção industrial (bens e serviços),1,12.5
+2024,CE,Mulher,Amarela,Profissionais das ciências e artes,2,25.0
+2024,CE,Mulher,Amarela,Serviços administrativos,2,25.0
+2024,CE,Mulher,Amarela,Serviços e comércio,1,12.5
+2024,CE,Mulher,Branca,Dirigentes e gerentes,2,28.571
+2024,CE,Mulher,Branca,Serviços administrativos,2,28.571
+2024,CE,Mulher,Branca,Serviços e comércio,3,42.857
+2024,CE,Mulher,Negra (preta+parda),Dirigentes e gerentes,6,35.294
+2024,CE,Mulher,Negra (preta+parda),Profissionais das ciências e artes,4,23.529
+2024,CE,Mulher,Negra (preta+parda),Serviços administrativos,2,11.765
+2024,CE,Mulher,Negra (preta+parda),Serviços e comércio,5,29.412
+2024,CE,Mulher,Não informada,Dirigentes e gerentes,1,7.143
+2024,CE,Mulher,Não informada,Produção industrial (bens e serviços),2,14.286
+2024,CE,Mulher,Não informada,Profissionais das ciências e artes,3,21.429
+2024,CE,Mulher,Não informada,Serviços administrativos,5,35.714
+2024,CE,Mulher,Não informada,Serviços e comércio,3,21.429
+2024,DF,Homem,Amarela,Dirigentes e gerentes,4,30.769
+2024,DF,Homem,Amarela,Produção industrial (bens e serviços),3,23.077
+2024,DF,Homem,Amarela,Profissionais das ciências e artes,1,7.692
+2024,DF,Homem,Amarela,Serviços administrativos,1,7.692
+2024,DF,Homem,Amarela,Serviços e comércio,4,30.769
+2024,DF,Homem,Branca,Produção industrial (bens e serviços),2,28.571
+2024,DF,Homem,Branca,Profissionais das ciências e artes,1,14.286
+2024,DF,Homem,Branca,Serviços administrativos,1,14.286
+2024,DF,Homem,Branca,Serviços e comércio,3,42.857
+2024,DF,Homem,Negra (preta+parda),Dirigentes e gerentes,3,15.789
+2024,DF,Homem,Negra (preta+parda),Produção industrial (bens e serviços),2,10.526
+2024,DF,Homem,Negra (preta+parda),Profissionais das ciências e artes,3,15.789
+2024,DF,Homem,Negra (preta+parda),Serviços administrativos,5,26.316
+2024,DF,Homem,Negra (preta+parda),Serviços e comércio,6,31.579
+2024,DF,Homem,Não informada,Dirigentes e gerentes,3,17.647
+2024,DF,Homem,Não informada,Produção industrial (bens e serviços),4,23.529
+2024,DF,Homem,Não informada,Profissionais das ciências e artes,3,17.647
+2024,DF,Homem,Não informada,Serviços administrativos,3,17.647
+2024,DF,Homem,Não informada,Serviços e comércio,4,23.529
+2024,DF,Mulher,Amarela,Dirigentes e gerentes,1,14.286
+2024,DF,Mulher,Amarela,Produção industrial (bens e serviços),1,14.286
+2024,DF,Mulher,Amarela,Serviços administrativos,3,42.857
+2024,DF,Mulher,Amarela,Serviços e comércio,2,28.571
+2024,DF,Mulher,Branca,Dirigentes e gerentes,1,14.286
+2024,DF,Mulher,Branca,Produção industrial (bens e serviços),1,14.286
+2024,DF,Mulher,Branca,Profissionais das ciências e artes,1,14.286
+2024,DF,Mulher,Branca,Serviços administrativos,2,28.571
+2024,DF,Mulher,Branca,Serviços e comércio,2,28.571
+2024,DF,Mulher,Negra (preta+parda),Dirigentes e gerentes,3,27.273
+2024,DF,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),1,9.091
+2024,DF,Mulher,Negra (preta+parda),Profissionais das ciências e artes,1,9.091
+2024,DF,Mulher,Negra (preta+parda),Serviços administrativos,3,27.273
+2024,DF,Mulher,Negra (preta+parda),Serviços e comércio,3,27.273
+2024,DF,Mulher,Não informada,Dirigentes e gerentes,2,16.667
+2024,DF,Mulher,Não informada,Produção industrial (bens e serviços),2,16.667
+2024,DF,Mulher,Não informada,Profissionais das ciências e artes,2,16.667
+2024,DF,Mulher,Não informada,Serviços administrativos,6,50.0
+2024,ES,Homem,Amarela,Dirigentes e gerentes,6,50.0
+2024,ES,Homem,Amarela,Produção industrial (bens e serviços),1,8.333
+2024,ES,Homem,Amarela,Profissionais das ciências e artes,1,8.333
+2024,ES,Homem,Amarela,Serviços administrativos,2,16.667
+2024,ES,Homem,Amarela,Serviços e comércio,2,16.667
+2024,ES,Homem,Branca,Dirigentes e gerentes,1,14.286
+2024,ES,Homem,Branca,Profissionais das ciências e artes,3,42.857
+2024,ES,Homem,Branca,Serviços administrativos,2,28.571
+2024,ES,Homem,Branca,Serviços e comércio,1,14.286
+2024,ES,Homem,Negra (preta+parda),Dirigentes e gerentes,1,6.25
+2024,ES,Homem,Negra (preta+parda),Produção industrial (bens e serviços),6,37.5
+2024,ES,Homem,Negra (preta+parda),Profissionais das ciências e artes,1,6.25
+2024,ES,Homem,Negra (preta+parda),Serviços administrativos,4,25.0
+2024,ES,Homem,Negra (preta+parda),Serviços e comércio,4,25.0
+2024,ES,Homem,Não informada,Dirigentes e gerentes,2,18.182
+2024,ES,Homem,Não informada,Produção industrial (bens e serviços),4,36.364
+2024,ES,Homem,Não informada,Profissionais das ciências e artes,1,9.091
+2024,ES,Homem,Não informada,Serviços administrativos,2,18.182
+2024,ES,Homem,Não informada,Serviços e comércio,2,18.182
+2024,ES,Mulher,Amarela,Dirigentes e gerentes,2,22.222
+2024,ES,Mulher,Amarela,Produção industrial (bens e serviços),1,11.111
+2024,ES,Mulher,Amarela,Profissionais das ciências e artes,2,22.222
+2024,ES,Mulher,Amarela,Serviços e comércio,4,44.444
+2024,ES,Mulher,Branca,Dirigentes e gerentes,2,22.222
+2024,ES,Mulher,Branca,Produção industrial (bens e serviços),2,22.222
+2024,ES,Mulher,Branca,Serviços administrativos,4,44.444
+2024,ES,Mulher,Branca,Serviços e comércio,1,11.111
+2024,ES,Mulher,Negra (preta+parda),Dirigentes e gerentes,4,57.143
+2024,ES,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),1,14.286
+2024,ES,Mulher,Negra (preta+parda),Profissionais das ciências e artes,1,14.286
+2024,ES,Mulher,Negra (preta+parda),Serviços administrativos,1,14.286
+2024,ES,Mulher,Não informada,Dirigentes e gerentes,4,18.182
+2024,ES,Mulher,Não informada,Produção industrial (bens e serviços),1,4.545
+2024,ES,Mulher,Não informada,Profissionais das ciências e artes,6,27.273
+2024,ES,Mulher,Não informada,Serviços administrativos,7,31.818
+2024,ES,Mulher,Não informada,Serviços e comércio,4,18.182
+2024,GO,Homem,Amarela,Dirigentes e gerentes,1,9.091
+2024,GO,Homem,Amarela,Produção industrial (bens e serviços),2,18.182
+2024,GO,Homem,Amarela,Profissionais das ciências e artes,5,45.455
+2024,GO,Homem,Amarela,Serviços administrativos,2,18.182
+2024,GO,Homem,Amarela,Serviços e comércio,1,9.091
+2024,GO,Homem,Branca,Dirigentes e gerentes,2,33.333
+2024,GO,Homem,Branca,Produção industrial (bens e serviços),3,50.0
+2024,GO,Homem,Branca,Serviços administrativos,1,16.667
+2024,GO,Homem,Negra (preta+parda),Dirigentes e gerentes,6,30.0
+2024,GO,Homem,Negra (preta+parda),Produção industrial (bens e serviços),1,5.0
+2024,GO,Homem,Negra (preta+parda),Profissionais das ciências e artes,2,10.0
+2024,GO,Homem,Negra (preta+parda),Serviços administrativos,5,25.0
+2024,GO,Homem,Negra (preta+parda),Serviços e comércio,6,30.0
+2024,GO,Homem,Não informada,Dirigentes e gerentes,5,22.727
+2024,GO,Homem,Não informada,Produção industrial (bens e serviços),5,22.727
+2024,GO,Homem,Não informada,Profissionais das ciências e artes,3,13.636
+2024,GO,Homem,Não informada,Serviços administrativos,7,31.818
+2024,GO,Homem,Não informada,Serviços e comércio,2,9.091
+2024,GO,Mulher,Amarela,Dirigentes e gerentes,1,16.667
+2024,GO,Mulher,Amarela,Produção industrial (bens e serviços),2,33.333
+2024,GO,Mulher,Amarela,Profissionais das ciências e artes,1,16.667
+2024,GO,Mulher,Amarela,Serviços e comércio,2,33.333
+2024,GO,Mulher,Branca,Dirigentes e gerentes,1,20.0
+2024,GO,Mulher,Branca,Produção industrial (bens e serviços),1,20.0
+2024,GO,Mulher,Branca,Serviços administrativos,1,20.0
+2024,GO,Mulher,Branca,Serviços e comércio,2,40.0
+2024,GO,Mulher,Negra (preta+parda),Dirigentes e gerentes,2,9.091
+2024,GO,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),4,18.182
+2024,GO,Mulher,Negra (preta+parda),Profissionais das ciências e artes,8,36.364
+2024,GO,Mulher,Negra (preta+parda),Serviços administrativos,4,18.182
+2024,GO,Mulher,Negra (preta+parda),Serviços e comércio,4,18.182
+2024,GO,Mulher,Não informada,Dirigentes e gerentes,2,15.385
+2024,GO,Mulher,Não informada,Produção industrial (bens e serviços),4,30.769
+2024,GO,Mulher,Não informada,Profissionais das ciências e artes,3,23.077
+2024,GO,Mulher,Não informada,Serviços administrativos,3,23.077
+2024,GO,Mulher,Não informada,Serviços e comércio,1,7.692
+2024,MA,Homem,Amarela,Dirigentes e gerentes,1,11.111
+2024,MA,Homem,Amarela,Produção industrial (bens e serviços),2,22.222
+2024,MA,Homem,Amarela,Profissionais das ciências e artes,2,22.222
+2024,MA,Homem,Amarela,Serviços e comércio,4,44.444
+2024,MA,Homem,Branca,Dirigentes e gerentes,2,20.0
+2024,MA,Homem,Branca,Produção industrial (bens e serviços),1,10.0
+2024,MA,Homem,Branca,Profissionais das ciências e artes,2,20.0
+2024,MA,Homem,Branca,Serviços administrativos,1,10.0
+2024,MA,Homem,Branca,Serviços e comércio,4,40.0
+2024,MA,Homem,Negra (preta+parda),Dirigentes e gerentes,5,33.333
+2024,MA,Homem,Negra (preta+parda),Produção industrial (bens e serviços),3,20.0
+2024,MA,Homem,Negra (preta+parda),Profissionais das ciências e artes,2,13.333
+2024,MA,Homem,Negra (preta+parda),Serviços administrativos,3,20.0
+2024,MA,Homem,Negra (preta+parda),Serviços e comércio,2,13.333
+2024,MA,Homem,Não informada,Dirigentes e gerentes,2,13.333
+2024,MA,Homem,Não informada,Produção industrial (bens e serviços),4,26.667
+2024,MA,Homem,Não informada,Profissionais das ciências e artes,5,33.333
+2024,MA,Homem,Não informada,Serviços administrativos,2,13.333
+2024,MA,Homem,Não informada,Serviços e comércio,2,13.333
+2024,MA,Mulher,Amarela,Dirigentes e gerentes,1,16.667
+2024,MA,Mulher,Amarela,Produção industrial (bens e serviços),1,16.667
+2024,MA,Mulher,Amarela,Profissionais das ciências e artes,2,33.333
+2024,MA,Mulher,Amarela,Serviços e comércio,2,33.333
+2024,MA,Mulher,Branca,Dirigentes e gerentes,2,20.0
+2024,MA,Mulher,Branca,Produção industrial (bens e serviços),2,20.0
+2024,MA,Mulher,Branca,Profissionais das ciências e artes,3,30.0
+2024,MA,Mulher,Branca,Serviços e comércio,3,30.0
+2024,MA,Mulher,Negra (preta+parda),Dirigentes e gerentes,4,25.0
+2024,MA,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),5,31.25
+2024,MA,Mulher,Negra (preta+parda),Profissionais das ciências e artes,4,25.0
+2024,MA,Mulher,Negra (preta+parda),Serviços administrativos,1,6.25
+2024,MA,Mulher,Negra (preta+parda),Serviços e comércio,2,12.5
+2024,MA,Mulher,Não informada,Dirigentes e gerentes,1,9.091
+2024,MA,Mulher,Não informada,Produção industrial (bens e serviços),4,36.364
+2024,MA,Mulher,Não informada,Profissionais das ciências e artes,4,36.364
+2024,MA,Mulher,Não informada,Serviços administrativos,1,9.091
+2024,MA,Mulher,Não informada,Serviços e comércio,1,9.091
+2024,MG,Homem,Amarela,Dirigentes e gerentes,2,14.286
+2024,MG,Homem,Amarela,Produção industrial (bens e serviços),3,21.429
+2024,MG,Homem,Amarela,Profissionais das ciências e artes,3,21.429
+2024,MG,Homem,Amarela,Serviços administrativos,3,21.429
+2024,MG,Homem,Amarela,Serviços e comércio,3,21.429
+2024,MG,Homem,Branca,Dirigentes e gerentes,2,33.333
+2024,MG,Homem,Branca,Profissionais das ciências e artes,1,16.667
+2024,MG,Homem,Branca,Serviços administrativos,2,33.333
+2024,MG,Homem,Branca,Serviços e comércio,1,16.667
+2024,MG,Homem,Negra (preta+parda),Dirigentes e gerentes,2,14.286
+2024,MG,Homem,Negra (preta+parda),Produção industrial (bens e serviços),4,28.571
+2024,MG,Homem,Negra (preta+parda),Profissionais das ciências e artes,2,14.286
+2024,MG,Homem,Negra (preta+parda),Serviços administrativos,4,28.571
+2024,MG,Homem,Negra (preta+parda),Serviços e comércio,2,14.286
+2024,MG,Homem,Não informada,Dirigentes e gerentes,3,23.077
+2024,MG,Homem,Não informada,Produção industrial (bens e serviços),1,7.692
+2024,MG,Homem,Não informada,Profissionais das ciências e artes,3,23.077
+2024,MG,Homem,Não informada,Serviços administrativos,4,30.769
+2024,MG,Homem,Não informada,Serviços e comércio,2,15.385
+2024,MG,Mulher,Amarela,Dirigentes e gerentes,1,14.286
+2024,MG,Mulher,Amarela,Produção industrial (bens e serviços),2,28.571
+2024,MG,Mulher,Amarela,Profissionais das ciências e artes,1,14.286
+2024,MG,Mulher,Amarela,Serviços administrativos,2,28.571
+2024,MG,Mulher,Amarela,Serviços e comércio,1,14.286
+2024,MG,Mulher,Branca,Dirigentes e gerentes,2,25.0
+2024,MG,Mulher,Branca,Produção industrial (bens e serviços),3,37.5
+2024,MG,Mulher,Branca,Profissionais das ciências e artes,2,25.0
+2024,MG,Mulher,Branca,Serviços e comércio,1,12.5
+2024,MG,Mulher,Negra (preta+parda),Dirigentes e gerentes,1,7.692
+2024,MG,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),2,15.385
+2024,MG,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,15.385
+2024,MG,Mulher,Negra (preta+parda),Serviços administrativos,6,46.154
+2024,MG,Mulher,Negra (preta+parda),Serviços e comércio,2,15.385
+2024,MG,Mulher,Não informada,Dirigentes e gerentes,3,16.667
+2024,MG,Mulher,Não informada,Produção industrial (bens e serviços),3,16.667
+2024,MG,Mulher,Não informada,Profissionais das ciências e artes,5,27.778
+2024,MG,Mulher,Não informada,Serviços administrativos,2,11.111
+2024,MG,Mulher,Não informada,Serviços e comércio,5,27.778
+2024,MS,Homem,Amarela,Produção industrial (bens e serviços),1,16.667
+2024,MS,Homem,Amarela,Profissionais das ciências e artes,2,33.333
+2024,MS,Homem,Amarela,Serviços administrativos,3,50.0
+2024,MS,Homem,Branca,Profissionais das ciências e artes,1,14.286
+2024,MS,Homem,Branca,Serviços administrativos,4,57.143
+2024,MS,Homem,Branca,Serviços e comércio,2,28.571
+2024,MS,Homem,Negra (preta+parda),Dirigentes e gerentes,4,21.053
+2024,MS,Homem,Negra (preta+parda),Produção industrial (bens e serviços),6,31.579
+2024,MS,Homem,Negra (preta+parda),Profissionais das ciências e artes,3,15.789
+2024,MS,Homem,Negra (preta+parda),Serviços administrativos,1,5.263
+2024,MS,Homem,Negra (preta+parda),Serviços e comércio,5,26.316
+2024,MS,Homem,Não informada,Dirigentes e gerentes,2,11.765
+2024,MS,Homem,Não informada,Produção industrial (bens e serviços),6,35.294
+2024,MS,Homem,Não informada,Profissionais das ciências e artes,3,17.647
+2024,MS,Homem,Não informada,Serviços administrativos,3,17.647
+2024,MS,Homem,Não informada,Serviços e comércio,3,17.647
+2024,MS,Mulher,Amarela,Dirigentes e gerentes,4,44.444
+2024,MS,Mulher,Amarela,Produção industrial (bens e serviços),1,11.111
+2024,MS,Mulher,Amarela,Profissionais das ciências e artes,3,33.333
+2024,MS,Mulher,Amarela,Serviços e comércio,1,11.111
+2024,MS,Mulher,Branca,Dirigentes e gerentes,1,16.667
+2024,MS,Mulher,Branca,Produção industrial (bens e serviços),3,50.0
+2024,MS,Mulher,Branca,Profissionais das ciências e artes,1,16.667
+2024,MS,Mulher,Branca,Serviços e comércio,1,16.667
+2024,MS,Mulher,Negra (preta+parda),Dirigentes e gerentes,4,20.0
+2024,MS,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),3,15.0
+2024,MS,Mulher,Negra (preta+parda),Profissionais das ciências e artes,6,30.0
+2024,MS,Mulher,Negra (preta+parda),Serviços administrativos,4,20.0
+2024,MS,Mulher,Negra (preta+parda),Serviços e comércio,3,15.0
+2024,MS,Mulher,Não informada,Dirigentes e gerentes,1,10.0
+2024,MS,Mulher,Não informada,Produção industrial (bens e serviços),3,30.0
+2024,MS,Mulher,Não informada,Profissionais das ciências e artes,2,20.0
+2024,MS,Mulher,Não informada,Serviços administrativos,2,20.0
+2024,MS,Mulher,Não informada,Serviços e comércio,2,20.0
+2024,MT,Homem,Amarela,Produção industrial (bens e serviços),2,33.333
+2024,MT,Homem,Amarela,Serviços administrativos,1,16.667
+2024,MT,Homem,Amarela,Serviços e comércio,3,50.0
+2024,MT,Homem,Branca,Dirigentes e gerentes,6,60.0
+2024,MT,Homem,Branca,Produção industrial (bens e serviços),2,20.0
+2024,MT,Homem,Branca,Profissionais das ciências e artes,2,20.0
+2024,MT,Homem,Negra (preta+parda),Dirigentes e gerentes,7,41.176
+2024,MT,Homem,Negra (preta+parda),Produção industrial (bens e serviços),2,11.765
+2024,MT,Homem,Negra (preta+parda),Profissionais das ciências e artes,3,17.647
+2024,MT,Homem,Negra (preta+parda),Serviços administrativos,1,5.882
+2024,MT,Homem,Negra (preta+parda),Serviços e comércio,4,23.529
+2024,MT,Homem,Não informada,Dirigentes e gerentes,5,26.316
+2024,MT,Homem,Não informada,Produção industrial (bens e serviços),3,15.789
+2024,MT,Homem,Não informada,Profissionais das ciências e artes,2,10.526
+2024,MT,Homem,Não informada,Serviços administrativos,7,36.842
+2024,MT,Homem,Não informada,Serviços e comércio,2,10.526
+2024,MT,Mulher,Amarela,Dirigentes e gerentes,1,20.0
+2024,MT,Mulher,Amarela,Produção industrial (bens e serviços),2,40.0
+2024,MT,Mulher,Amarela,Profissionais das ciências e artes,1,20.0
+2024,MT,Mulher,Amarela,Serviços administrativos,1,20.0
+2024,MT,Mulher,Branca,Dirigentes e gerentes,1,20.0
+2024,MT,Mulher,Branca,Profissionais das ciências e artes,1,20.0
+2024,MT,Mulher,Branca,Serviços administrativos,3,60.0
+2024,MT,Mulher,Negra (preta+parda),Dirigentes e gerentes,2,12.5
+2024,MT,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),3,18.75
+2024,MT,Mulher,Negra (preta+parda),Profissionais das ciências e artes,7,43.75
+2024,MT,Mulher,Negra (preta+parda),Serviços administrativos,3,18.75
+2024,MT,Mulher,Negra (preta+parda),Serviços e comércio,1,6.25
+2024,MT,Mulher,Não informada,Dirigentes e gerentes,3,21.429
+2024,MT,Mulher,Não informada,Produção industrial (bens e serviços),5,35.714
+2024,MT,Mulher,Não informada,Serviços administrativos,4,28.571
+2024,MT,Mulher,Não informada,Serviços e comércio,2,14.286
+2024,PA,Homem,Amarela,Dirigentes e gerentes,1,16.667
+2024,PA,Homem,Amarela,Produção industrial (bens e serviços),1,16.667
+2024,PA,Homem,Amarela,Profissionais das ciências e artes,3,50.0
+2024,PA,Homem,Amarela,Serviços e comércio,1,16.667
+2024,PA,Homem,Branca,Dirigentes e gerentes,3,21.429
+2024,PA,Homem,Branca,Produção industrial (bens e serviços),4,28.571
+2024,PA,Homem,Branca,Profissionais das ciências e artes,2,14.286
+2024,PA,Homem,Branca,Serviços administrativos,4,28.571
+2024,PA,Homem,Branca,Serviços e comércio,1,7.143
+2024,PA,Homem,Negra (preta+parda),Dirigentes e gerentes,4,19.048
+2024,PA,Homem,Negra (preta+parda),Produção industrial (bens e serviços),7,33.333
+2024,PA,Homem,Negra (preta+parda),Profissionais das ciências e artes,4,19.048
+2024,PA,Homem,Negra (preta+parda),Serviços administrativos,4,19.048
+2024,PA,Homem,Negra (preta+parda),Serviços e comércio,2,9.524
+2024,PA,Homem,Não informada,Dirigentes e gerentes,5,26.316
+2024,PA,Homem,Não informada,Produção industrial (bens e serviços),1,5.263
+2024,PA,Homem,Não informada,Profissionais das ciências e artes,4,21.053
+2024,PA,Homem,Não informada,Serviços administrativos,5,26.316
+2024,PA,Homem,Não informada,Serviços e comércio,4,21.053
+2024,PA,Mulher,Amarela,Produção industrial (bens e serviços),2,33.333
+2024,PA,Mulher,Amarela,Serviços administrativos,1,16.667
+2024,PA,Mulher,Amarela,Serviços e comércio,3,50.0
+2024,PA,Mulher,Branca,Produção industrial (bens e serviços),1,20.0
+2024,PA,Mulher,Branca,Profissionais das ciências e artes,1,20.0
+2024,PA,Mulher,Branca,Serviços administrativos,2,40.0
+2024,PA,Mulher,Branca,Serviços e comércio,1,20.0
+2024,PA,Mulher,Negra (preta+parda),Dirigentes e gerentes,3,20.0
+2024,PA,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),5,33.333
+2024,PA,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,13.333
+2024,PA,Mulher,Negra (preta+parda),Serviços administrativos,2,13.333
+2024,PA,Mulher,Negra (preta+parda),Serviços e comércio,3,20.0
+2024,PA,Mulher,Não informada,Dirigentes e gerentes,4,28.571
+2024,PA,Mulher,Não informada,Produção industrial (bens e serviços),5,35.714
+2024,PA,Mulher,Não informada,Serviços administrativos,3,21.429
+2024,PA,Mulher,Não informada,Serviços e comércio,2,14.286
+2024,PB,Homem,Amarela,Dirigentes e gerentes,2,22.222
+2024,PB,Homem,Amarela,Produção industrial (bens e serviços),3,33.333
+2024,PB,Homem,Amarela,Profissionais das ciências e artes,1,11.111
+2024,PB,Homem,Amarela,Serviços administrativos,2,22.222
+2024,PB,Homem,Amarela,Serviços e comércio,1,11.111
+2024,PB,Homem,Branca,Dirigentes e gerentes,4,28.571
+2024,PB,Homem,Branca,Produção industrial (bens e serviços),2,14.286
+2024,PB,Homem,Branca,Profissionais das ciências e artes,3,21.429
+2024,PB,Homem,Branca,Serviços administrativos,3,21.429
+2024,PB,Homem,Branca,Serviços e comércio,2,14.286
+2024,PB,Homem,Negra (preta+parda),Dirigentes e gerentes,5,23.81
+2024,PB,Homem,Negra (preta+parda),Produção industrial (bens e serviços),5,23.81
+2024,PB,Homem,Negra (preta+parda),Profissionais das ciências e artes,1,4.762
+2024,PB,Homem,Negra (preta+parda),Serviços administrativos,4,19.048
+2024,PB,Homem,Negra (preta+parda),Serviços e comércio,6,28.571
+2024,PB,Homem,Não informada,Dirigentes e gerentes,2,13.333
+2024,PB,Homem,Não informada,Produção industrial (bens e serviços),1,6.667
+2024,PB,Homem,Não informada,Profissionais das ciências e artes,5,33.333
+2024,PB,Homem,Não informada,Serviços administrativos,5,33.333
+2024,PB,Homem,Não informada,Serviços e comércio,2,13.333
+2024,PB,Mulher,Amarela,Dirigentes e gerentes,3,25.0
+2024,PB,Mulher,Amarela,Produção industrial (bens e serviços),1,8.333
+2024,PB,Mulher,Amarela,Profissionais das ciências e artes,1,8.333
+2024,PB,Mulher,Amarela,Serviços administrativos,2,16.667
+2024,PB,Mulher,Amarela,Serviços e comércio,5,41.667
+2024,PB,Mulher,Branca,Produção industrial (bens e serviços),3,50.0
+2024,PB,Mulher,Branca,Profissionais das ciências e artes,1,16.667
+2024,PB,Mulher,Branca,Serviços administrativos,1,16.667
+2024,PB,Mulher,Branca,Serviços e comércio,1,16.667
+2024,PB,Mulher,Negra (preta+parda),Dirigentes e gerentes,2,20.0
+2024,PB,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),1,10.0
+2024,PB,Mulher,Negra (preta+parda),Profissionais das ciências e artes,3,30.0
+2024,PB,Mulher,Negra (preta+parda),Serviços administrativos,1,10.0
+2024,PB,Mulher,Negra (preta+parda),Serviços e comércio,3,30.0
+2024,PB,Mulher,Não informada,Produção industrial (bens e serviços),1,12.5
+2024,PB,Mulher,Não informada,Profissionais das ciências e artes,1,12.5
+2024,PB,Mulher,Não informada,Serviços administrativos,2,25.0
+2024,PB,Mulher,Não informada,Serviços e comércio,4,50.0
+2024,PE,Homem,Amarela,Dirigentes e gerentes,2,20.0
+2024,PE,Homem,Amarela,Produção industrial (bens e serviços),4,40.0
+2024,PE,Homem,Amarela,Profissionais das ciências e artes,2,20.0
+2024,PE,Homem,Amarela,Serviços e comércio,2,20.0
+2024,PE,Homem,Branca,Dirigentes e gerentes,2,25.0
+2024,PE,Homem,Branca,Produção industrial (bens e serviços),4,50.0
+2024,PE,Homem,Branca,Profissionais das ciências e artes,1,12.5
+2024,PE,Homem,Branca,Serviços administrativos,1,12.5
+2024,PE,Homem,Negra (preta+parda),Dirigentes e gerentes,6,27.273
+2024,PE,Homem,Negra (preta+parda),Produção industrial (bens e serviços),6,27.273
+2024,PE,Homem,Negra (preta+parda),Profissionais das ciências e artes,4,18.182
+2024,PE,Homem,Negra (preta+parda),Serviços administrativos,1,4.545
+2024,PE,Homem,Negra (preta+parda),Serviços e comércio,5,22.727
+2024,PE,Homem,Não informada,Dirigentes e gerentes,5,27.778
+2024,PE,Homem,Não informada,Produção industrial (bens e serviços),5,27.778
+2024,PE,Homem,Não informada,Profissionais das ciências e artes,4,22.222
+2024,PE,Homem,Não informada,Serviços e comércio,4,22.222
+2024,PE,Mulher,Amarela,Produção industrial (bens e serviços),1,20.0
+2024,PE,Mulher,Amarela,Profissionais das ciências e artes,1,20.0
+2024,PE,Mulher,Amarela,Serviços administrativos,1,20.0
+2024,PE,Mulher,Amarela,Serviços e comércio,2,40.0
+2024,PE,Mulher,Branca,Dirigentes e gerentes,2,40.0
+2024,PE,Mulher,Branca,Produção industrial (bens e serviços),1,20.0
+2024,PE,Mulher,Branca,Serviços e comércio,2,40.0
+2024,PE,Mulher,Negra (preta+parda),Dirigentes e gerentes,4,28.571
+2024,PE,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),2,14.286
+2024,PE,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,14.286
+2024,PE,Mulher,Negra (preta+parda),Serviços administrativos,3,21.429
+2024,PE,Mulher,Negra (preta+parda),Serviços e comércio,3,21.429
+2024,PE,Mulher,Não informada,Dirigentes e gerentes,1,9.091
+2024,PE,Mulher,Não informada,Produção industrial (bens e serviços),2,18.182
+2024,PE,Mulher,Não informada,Profissionais das ciências e artes,1,9.091
+2024,PE,Mulher,Não informada,Serviços administrativos,4,36.364
+2024,PE,Mulher,Não informada,Serviços e comércio,3,27.273
+2024,PI,Homem,Amarela,Dirigentes e gerentes,1,16.667
+2024,PI,Homem,Amarela,Produção industrial (bens e serviços),1,16.667
+2024,PI,Homem,Amarela,Profissionais das ciências e artes,2,33.333
+2024,PI,Homem,Amarela,Serviços e comércio,2,33.333
+2024,PI,Homem,Branca,Dirigentes e gerentes,2,25.0
+2024,PI,Homem,Branca,Produção industrial (bens e serviços),2,25.0
+2024,PI,Homem,Branca,Profissionais das ciências e artes,1,12.5
+2024,PI,Homem,Branca,Serviços administrativos,2,25.0
+2024,PI,Homem,Branca,Serviços e comércio,1,12.5
+2024,PI,Homem,Negra (preta+parda),Dirigentes e gerentes,3,20.0
+2024,PI,Homem,Negra (preta+parda),Produção industrial (bens e serviços),2,13.333
+2024,PI,Homem,Negra (preta+parda),Profissionais das ciências e artes,1,6.667
+2024,PI,Homem,Negra (preta+parda),Serviços administrativos,8,53.333
+2024,PI,Homem,Negra (preta+parda),Serviços e comércio,1,6.667
+2024,PI,Homem,Não informada,Dirigentes e gerentes,6,31.579
+2024,PI,Homem,Não informada,Produção industrial (bens e serviços),1,5.263
+2024,PI,Homem,Não informada,Profissionais das ciências e artes,2,10.526
+2024,PI,Homem,Não informada,Serviços administrativos,3,15.789
+2024,PI,Homem,Não informada,Serviços e comércio,7,36.842
+2024,PI,Mulher,Amarela,Dirigentes e gerentes,1,20.0
+2024,PI,Mulher,Amarela,Produção industrial (bens e serviços),1,20.0
+2024,PI,Mulher,Amarela,Profissionais das ciências e artes,1,20.0
+2024,PI,Mulher,Amarela,Serviços administrativos,2,40.0
+2024,PI,Mulher,Branca,Dirigentes e gerentes,4,44.444
+2024,PI,Mulher,Branca,Produção industrial (bens e serviços),1,11.111
+2024,PI,Mulher,Branca,Serviços administrativos,4,44.444
+2024,PI,Mulher,Negra (preta+parda),Dirigentes e gerentes,1,8.333
+2024,PI,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),4,33.333
+2024,PI,Mulher,Negra (preta+parda),Profissionais das ciências e artes,4,33.333
+2024,PI,Mulher,Negra (preta+parda),Serviços administrativos,1,8.333
+2024,PI,Mulher,Negra (preta+parda),Serviços e comércio,2,16.667
+2024,PI,Mulher,Não informada,Produção industrial (bens e serviços),2,18.182
+2024,PI,Mulher,Não informada,Profissionais das ciências e artes,4,36.364
+2024,PI,Mulher,Não informada,Serviços administrativos,3,27.273
+2024,PI,Mulher,Não informada,Serviços e comércio,2,18.182
+2024,PR,Homem,Amarela,Dirigentes e gerentes,1,14.286
+2024,PR,Homem,Amarela,Produção industrial (bens e serviços),2,28.571
+2024,PR,Homem,Amarela,Profissionais das ciências e artes,1,14.286
+2024,PR,Homem,Amarela,Serviços e comércio,3,42.857
+2024,PR,Homem,Branca,Dirigentes e gerentes,1,9.091
+2024,PR,Homem,Branca,Produção industrial (bens e serviços),3,27.273
+2024,PR,Homem,Branca,Profissionais das ciências e artes,1,9.091
+2024,PR,Homem,Branca,Serviços administrativos,2,18.182
+2024,PR,Homem,Branca,Serviços e comércio,4,36.364
+2024,PR,Homem,Negra (preta+parda),Dirigentes e gerentes,4,25.0
+2024,PR,Homem,Negra (preta+parda),Produção industrial (bens e serviços),4,25.0
+2024,PR,Homem,Negra (preta+parda),Profissionais das ciências e artes,1,6.25
+2024,PR,Homem,Negra (preta+parda),Serviços administrativos,5,31.25
+2024,PR,Homem,Negra (preta+parda),Serviços e comércio,2,12.5
+2024,PR,Homem,Não informada,Dirigentes e gerentes,1,5.882
+2024,PR,Homem,Não informada,Produção industrial (bens e serviços),4,23.529
+2024,PR,Homem,Não informada,Profissionais das ciências e artes,3,17.647
+2024,PR,Homem,Não informada,Serviços administrativos,4,23.529
+2024,PR,Homem,Não informada,Serviços e comércio,5,29.412
+2024,PR,Mulher,Amarela,Produção industrial (bens e serviços),2,40.0
+2024,PR,Mulher,Amarela,Profissionais das ciências e artes,1,20.0
+2024,PR,Mulher,Amarela,Serviços administrativos,1,20.0
+2024,PR,Mulher,Amarela,Serviços e comércio,1,20.0
+2024,PR,Mulher,Branca,Dirigentes e gerentes,3,50.0
+2024,PR,Mulher,Branca,Produção industrial (bens e serviços),1,16.667
+2024,PR,Mulher,Branca,Profissionais das ciências e artes,1,16.667
+2024,PR,Mulher,Branca,Serviços administrativos,1,16.667
+2024,PR,Mulher,Negra (preta+parda),Dirigentes e gerentes,4,40.0
+2024,PR,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),1,10.0
+2024,PR,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,20.0
+2024,PR,Mulher,Negra (preta+parda),Serviços administrativos,2,20.0
+2024,PR,Mulher,Negra (preta+parda),Serviços e comércio,1,10.0
+2024,PR,Mulher,Não informada,Produção industrial (bens e serviços),3,20.0
+2024,PR,Mulher,Não informada,Profissionais das ciências e artes,1,6.667
+2024,PR,Mulher,Não informada,Serviços administrativos,8,53.333
+2024,PR,Mulher,Não informada,Serviços e comércio,3,20.0
+2024,RJ,Homem,Amarela,Dirigentes e gerentes,3,33.333
+2024,RJ,Homem,Amarela,Produção industrial (bens e serviços),2,22.222
+2024,RJ,Homem,Amarela,Profissionais das ciências e artes,1,11.111
+2024,RJ,Homem,Amarela,Serviços administrativos,2,22.222
+2024,RJ,Homem,Amarela,Serviços e comércio,1,11.111
+2024,RJ,Homem,Branca,Dirigentes e gerentes,3,30.0
+2024,RJ,Homem,Branca,Produção industrial (bens e serviços),1,10.0
+2024,RJ,Homem,Branca,Profissionais das ciências e artes,1,10.0
+2024,RJ,Homem,Branca,Serviços administrativos,3,30.0
+2024,RJ,Homem,Branca,Serviços e comércio,2,20.0
+2024,RJ,Homem,Negra (preta+parda),Dirigentes e gerentes,5,25.0
+2024,RJ,Homem,Negra (preta+parda),Produção industrial (bens e serviços),6,30.0
+2024,RJ,Homem,Negra (preta+parda),Profissionais das ciências e artes,5,25.0
+2024,RJ,Homem,Negra (preta+parda),Serviços administrativos,2,10.0
+2024,RJ,Homem,Negra (preta+parda),Serviços e comércio,2,10.0
+2024,RJ,Homem,Não informada,Dirigentes e gerentes,3,18.75
+2024,RJ,Homem,Não informada,Produção industrial (bens e serviços),4,25.0
+2024,RJ,Homem,Não informada,Profissionais das ciências e artes,4,25.0
+2024,RJ,Homem,Não informada,Serviços administrativos,4,25.0
+2024,RJ,Homem,Não informada,Serviços e comércio,1,6.25
+2024,RJ,Mulher,Amarela,Profissionais das ciências e artes,1,33.333
+2024,RJ,Mulher,Amarela,Serviços administrativos,2,66.667
+2024,RJ,Mulher,Branca,Produção industrial (bens e serviços),2,50.0
+2024,RJ,Mulher,Branca,Serviços administrativos,2,50.0
+2024,RJ,Mulher,Negra (preta+parda),Dirigentes e gerentes,2,20.0
+2024,RJ,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),1,10.0
+2024,RJ,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,20.0
+2024,RJ,Mulher,Negra (preta+parda),Serviços administrativos,2,20.0
+2024,RJ,Mulher,Negra (preta+parda),Serviços e comércio,3,30.0
+2024,RJ,Mulher,Não informada,Produção industrial (bens e serviços),3,33.333
+2024,RJ,Mulher,Não informada,Profissionais das ciências e artes,5,55.556
+2024,RJ,Mulher,Não informada,Serviços administrativos,1,11.111
+2024,RN,Homem,Amarela,Dirigentes e gerentes,1,10.0
+2024,RN,Homem,Amarela,Produção industrial (bens e serviços),2,20.0
+2024,RN,Homem,Amarela,Profissionais das ciências e artes,2,20.0
+2024,RN,Homem,Amarela,Serviços administrativos,1,10.0
+2024,RN,Homem,Amarela,Serviços e comércio,4,40.0
+2024,RN,Homem,Branca,Dirigentes e gerentes,2,22.222
+2024,RN,Homem,Branca,Produção industrial (bens e serviços),2,22.222
+2024,RN,Homem,Branca,Profissionais das ciências e artes,1,11.111
+2024,RN,Homem,Branca,Serviços e comércio,4,44.444
+2024,RN,Homem,Negra (preta+parda),Dirigentes e gerentes,6,37.5
+2024,RN,Homem,Negra (preta+parda),Produção industrial (bens e serviços),2,12.5
+2024,RN,Homem,Negra (preta+parda),Profissionais das ciências e artes,4,25.0
+2024,RN,Homem,Negra (preta+parda),Serviços administrativos,1,6.25
+2024,RN,Homem,Negra (preta+parda),Serviços e comércio,3,18.75
+2024,RN,Homem,Não informada,Dirigentes e gerentes,1,7.143
+2024,RN,Homem,Não informada,Produção industrial (bens e serviços),2,14.286
+2024,RN,Homem,Não informada,Profissionais das ciências e artes,3,21.429
+2024,RN,Homem,Não informada,Serviços administrativos,5,35.714
+2024,RN,Homem,Não informada,Serviços e comércio,3,21.429
+2024,RN,Mulher,Amarela,Dirigentes e gerentes,3,30.0
+2024,RN,Mulher,Amarela,Profissionais das ciências e artes,3,30.0
+2024,RN,Mulher,Amarela,Serviços administrativos,2,20.0
+2024,RN,Mulher,Amarela,Serviços e comércio,2,20.0
+2024,RN,Mulher,Branca,Dirigentes e gerentes,1,16.667
+2024,RN,Mulher,Branca,Produção industrial (bens e serviços),1,16.667
+2024,RN,Mulher,Branca,Profissionais das ciências e artes,2,33.333
+2024,RN,Mulher,Branca,Serviços administrativos,1,16.667
+2024,RN,Mulher,Branca,Serviços e comércio,1,16.667
+2024,RN,Mulher,Negra (preta+parda),Dirigentes e gerentes,1,6.667
+2024,RN,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),3,20.0
+2024,RN,Mulher,Negra (preta+parda),Profissionais das ciências e artes,4,26.667
+2024,RN,Mulher,Negra (preta+parda),Serviços administrativos,4,26.667
+2024,RN,Mulher,Negra (preta+parda),Serviços e comércio,3,20.0
+2024,RN,Mulher,Não informada,Dirigentes e gerentes,3,23.077
+2024,RN,Mulher,Não informada,Produção industrial (bens e serviços),2,15.385
+2024,RN,Mulher,Não informada,Profissionais das ciências e artes,2,15.385
+2024,RN,Mulher,Não informada,Serviços administrativos,3,23.077
+2024,RN,Mulher,Não informada,Serviços e comércio,3,23.077
+2024,RO,Homem,Amarela,Dirigentes e gerentes,1,11.111
+2024,RO,Homem,Amarela,Produção industrial (bens e serviços),3,33.333
+2024,RO,Homem,Amarela,Profissionais das ciências e artes,1,11.111
+2024,RO,Homem,Amarela,Serviços administrativos,1,11.111
+2024,RO,Homem,Amarela,Serviços e comércio,3,33.333
+2024,RO,Homem,Branca,Dirigentes e gerentes,3,33.333
+2024,RO,Homem,Branca,Profissionais das ciências e artes,3,33.333
+2024,RO,Homem,Branca,Serviços administrativos,1,11.111
+2024,RO,Homem,Branca,Serviços e comércio,2,22.222
+2024,RO,Homem,Negra (preta+parda),Dirigentes e gerentes,4,25.0
+2024,RO,Homem,Negra (preta+parda),Produção industrial (bens e serviços),5,31.25
+2024,RO,Homem,Negra (preta+parda),Profissionais das ciências e artes,1,6.25
+2024,RO,Homem,Negra (preta+parda),Serviços administrativos,2,12.5
+2024,RO,Homem,Negra (preta+parda),Serviços e comércio,4,25.0
+2024,RO,Homem,Não informada,Dirigentes e gerentes,4,23.529
+2024,RO,Homem,Não informada,Produção industrial (bens e serviços),3,17.647
+2024,RO,Homem,Não informada,Serviços administrativos,6,35.294
+2024,RO,Homem,Não informada,Serviços e comércio,4,23.529
+2024,RO,Mulher,Amarela,Dirigentes e gerentes,2,50.0
+2024,RO,Mulher,Amarela,Serviços e comércio,2,50.0
+2024,RO,Mulher,Branca,Produção industrial (bens e serviços),1,14.286
+2024,RO,Mulher,Branca,Profissionais das ciências e artes,1,14.286
+2024,RO,Mulher,Branca,Serviços administrativos,3,42.857
+2024,RO,Mulher,Branca,Serviços e comércio,2,28.571
+2024,RO,Mulher,Negra (preta+parda),Dirigentes e gerentes,4,23.529
+2024,RO,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),4,23.529
+2024,RO,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,11.765
+2024,RO,Mulher,Negra (preta+parda),Serviços administrativos,2,11.765
+2024,RO,Mulher,Negra (preta+parda),Serviços e comércio,5,29.412
+2024,RO,Mulher,Não informada,Dirigentes e gerentes,1,9.091
+2024,RO,Mulher,Não informada,Produção industrial (bens e serviços),5,45.455
+2024,RO,Mulher,Não informada,Profissionais das ciências e artes,5,45.455
+2024,RR,Homem,Amarela,Dirigentes e gerentes,3,25.0
+2024,RR,Homem,Amarela,Produção industrial (bens e serviços),4,33.333
+2024,RR,Homem,Amarela,Profissionais das ciências e artes,3,25.0
+2024,RR,Homem,Amarela,Serviços e comércio,2,16.667
+2024,RR,Homem,Branca,Produção industrial (bens e serviços),1,16.667
+2024,RR,Homem,Branca,Profissionais das ciências e artes,3,50.0
+2024,RR,Homem,Branca,Serviços e comércio,2,33.333
+2024,RR,Homem,Negra (preta+parda),Dirigentes e gerentes,3,20.0
+2024,RR,Homem,Negra (preta+parda),Produção industrial (bens e serviços),4,26.667
+2024,RR,Homem,Negra (preta+parda),Profissionais das ciências e artes,1,6.667
+2024,RR,Homem,Negra (preta+parda),Serviços administrativos,1,6.667
+2024,RR,Homem,Negra (preta+parda),Serviços e comércio,6,40.0
+2024,RR,Homem,Não informada,Dirigentes e gerentes,3,20.0
+2024,RR,Homem,Não informada,Produção industrial (bens e serviços),2,13.333
+2024,RR,Homem,Não informada,Profissionais das ciências e artes,5,33.333
+2024,RR,Homem,Não informada,Serviços administrativos,2,13.333
+2024,RR,Homem,Não informada,Serviços e comércio,3,20.0
+2024,RR,Mulher,Amarela,Dirigentes e gerentes,1,20.0
+2024,RR,Mulher,Amarela,Profissionais das ciências e artes,1,20.0
+2024,RR,Mulher,Amarela,Serviços administrativos,1,20.0
+2024,RR,Mulher,Amarela,Serviços e comércio,2,40.0
+2024,RR,Mulher,Branca,Dirigentes e gerentes,2,20.0
+2024,RR,Mulher,Branca,Produção industrial (bens e serviços),2,20.0
+2024,RR,Mulher,Branca,Profissionais das ciências e artes,4,40.0
+2024,RR,Mulher,Branca,Serviços administrativos,1,10.0
+2024,RR,Mulher,Branca,Serviços e comércio,1,10.0
+2024,RR,Mulher,Negra (preta+parda),Dirigentes e gerentes,3,27.273
+2024,RR,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),3,27.273
+2024,RR,Mulher,Negra (preta+parda),Profissionais das ciências e artes,1,9.091
+2024,RR,Mulher,Negra (preta+parda),Serviços administrativos,1,9.091
+2024,RR,Mulher,Negra (preta+parda),Serviços e comércio,3,27.273
+2024,RR,Mulher,Não informada,Produção industrial (bens e serviços),3,30.0
+2024,RR,Mulher,Não informada,Profissionais das ciências e artes,2,20.0
+2024,RR,Mulher,Não informada,Serviços administrativos,4,40.0
+2024,RR,Mulher,Não informada,Serviços e comércio,1,10.0
+2024,RS,Homem,Amarela,Dirigentes e gerentes,2,18.182
+2024,RS,Homem,Amarela,Produção industrial (bens e serviços),4,36.364
+2024,RS,Homem,Amarela,Profissionais das ciências e artes,2,18.182
+2024,RS,Homem,Amarela,Serviços administrativos,3,27.273
+2024,RS,Homem,Branca,Produção industrial (bens e serviços),1,20.0
+2024,RS,Homem,Branca,Serviços administrativos,3,60.0
+2024,RS,Homem,Branca,Serviços e comércio,1,20.0
+2024,RS,Homem,Negra (preta+parda),Dirigentes e gerentes,2,22.222
+2024,RS,Homem,Negra (preta+parda),Produção industrial (bens e serviços),1,11.111
+2024,RS,Homem,Negra (preta+parda),Profissionais das ciências e artes,3,33.333
+2024,RS,Homem,Negra (preta+parda),Serviços e comércio,3,33.333
+2024,RS,Homem,Não informada,Dirigentes e gerentes,7,25.926
+2024,RS,Homem,Não informada,Produção industrial (bens e serviços),4,14.815
+2024,RS,Homem,Não informada,Profissionais das ciências e artes,3,11.111
+2024,RS,Homem,Não informada,Serviços administrativos,5,18.519
+2024,RS,Homem,Não informada,Serviços e comércio,8,29.63
+2024,RS,Mulher,Amarela,Dirigentes e gerentes,2,25.0
+2024,RS,Mulher,Amarela,Profissionais das ciências e artes,1,12.5
+2024,RS,Mulher,Amarela,Serviços administrativos,3,37.5
+2024,RS,Mulher,Amarela,Serviços e comércio,2,25.0
+2024,RS,Mulher,Branca,Profissionais das ciências e artes,1,25.0
+2024,RS,Mulher,Branca,Serviços administrativos,2,50.0
+2024,RS,Mulher,Branca,Serviços e comércio,1,25.0
+2024,RS,Mulher,Negra (preta+parda),Dirigentes e gerentes,4,19.048
+2024,RS,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),5,23.81
+2024,RS,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,9.524
+2024,RS,Mulher,Negra (preta+parda),Serviços administrativos,5,23.81
+2024,RS,Mulher,Negra (preta+parda),Serviços e comércio,5,23.81
+2024,RS,Mulher,Não informada,Produção industrial (bens e serviços),3,30.0
+2024,RS,Mulher,Não informada,Profissionais das ciências e artes,1,10.0
+2024,RS,Mulher,Não informada,Serviços administrativos,2,20.0
+2024,RS,Mulher,Não informada,Serviços e comércio,4,40.0
+2024,SC,Homem,Amarela,Serviços administrativos,3,100.0
+2024,SC,Homem,Branca,Dirigentes e gerentes,1,20.0
+2024,SC,Homem,Branca,Produção industrial (bens e serviços),3,60.0
+2024,SC,Homem,Branca,Serviços e comércio,1,20.0
+2024,SC,Homem,Negra (preta+parda),Dirigentes e gerentes,2,15.385
+2024,SC,Homem,Negra (preta+parda),Produção industrial (bens e serviços),5,38.462
+2024,SC,Homem,Negra (preta+parda),Profissionais das ciências e artes,5,38.462
+2024,SC,Homem,Negra (preta+parda),Serviços administrativos,1,7.692
+2024,SC,Homem,Não informada,Dirigentes e gerentes,5,29.412
+2024,SC,Homem,Não informada,Produção industrial (bens e serviços),3,17.647
+2024,SC,Homem,Não informada,Profissionais das ciências e artes,4,23.529
+2024,SC,Homem,Não informada,Serviços administrativos,4,23.529
+2024,SC,Homem,Não informada,Serviços e comércio,1,5.882
+2024,SC,Mulher,Amarela,Produção industrial (bens e serviços),1,16.667
+2024,SC,Mulher,Amarela,Profissionais das ciências e artes,1,16.667
+2024,SC,Mulher,Amarela,Serviços administrativos,2,33.333
+2024,SC,Mulher,Amarela,Serviços e comércio,2,33.333
+2024,SC,Mulher,Branca,Dirigentes e gerentes,1,11.111
+2024,SC,Mulher,Branca,Produção industrial (bens e serviços),2,22.222
+2024,SC,Mulher,Branca,Profissionais das ciências e artes,2,22.222
+2024,SC,Mulher,Branca,Serviços administrativos,2,22.222
+2024,SC,Mulher,Branca,Serviços e comércio,2,22.222
+2024,SC,Mulher,Negra (preta+parda),Dirigentes e gerentes,1,12.5
+2024,SC,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),2,25.0
+2024,SC,Mulher,Negra (preta+parda),Profissionais das ciências e artes,1,12.5
+2024,SC,Mulher,Negra (preta+parda),Serviços administrativos,2,25.0
+2024,SC,Mulher,Negra (preta+parda),Serviços e comércio,2,25.0
+2024,SC,Mulher,Não informada,Dirigentes e gerentes,1,7.143
+2024,SC,Mulher,Não informada,Produção industrial (bens e serviços),2,14.286
+2024,SC,Mulher,Não informada,Profissionais das ciências e artes,4,28.571
+2024,SC,Mulher,Não informada,Serviços administrativos,3,21.429
+2024,SC,Mulher,Não informada,Serviços e comércio,4,28.571
+2024,SE,Homem,Amarela,Produção industrial (bens e serviços),2,40.0
+2024,SE,Homem,Amarela,Serviços administrativos,1,20.0
+2024,SE,Homem,Amarela,Serviços e comércio,2,40.0
+2024,SE,Homem,Branca,Dirigentes e gerentes,1,16.667
+2024,SE,Homem,Branca,Produção industrial (bens e serviços),1,16.667
+2024,SE,Homem,Branca,Serviços administrativos,3,50.0
+2024,SE,Homem,Branca,Serviços e comércio,1,16.667
+2024,SE,Homem,Negra (preta+parda),Dirigentes e gerentes,3,18.75
+2024,SE,Homem,Negra (preta+parda),Produção industrial (bens e serviços),4,25.0
+2024,SE,Homem,Negra (preta+parda),Profissionais das ciências e artes,4,25.0
+2024,SE,Homem,Negra (preta+parda),Serviços administrativos,4,25.0
+2024,SE,Homem,Negra (preta+parda),Serviços e comércio,1,6.25
+2024,SE,Homem,Não informada,Dirigentes e gerentes,11,44.0
+2024,SE,Homem,Não informada,Produção industrial (bens e serviços),5,20.0
+2024,SE,Homem,Não informada,Profissionais das ciências e artes,2,8.0
+2024,SE,Homem,Não informada,Serviços administrativos,1,4.0
+2024,SE,Homem,Não informada,Serviços e comércio,6,24.0
+2024,SE,Mulher,Amarela,Dirigentes e gerentes,3,30.0
+2024,SE,Mulher,Amarela,Produção industrial (bens e serviços),1,10.0
+2024,SE,Mulher,Amarela,Profissionais das ciências e artes,2,20.0
+2024,SE,Mulher,Amarela,Serviços administrativos,2,20.0
+2024,SE,Mulher,Amarela,Serviços e comércio,2,20.0
+2024,SE,Mulher,Branca,Dirigentes e gerentes,1,12.5
+2024,SE,Mulher,Branca,Produção industrial (bens e serviços),1,12.5
+2024,SE,Mulher,Branca,Profissionais das ciências e artes,1,12.5
+2024,SE,Mulher,Branca,Serviços administrativos,2,25.0
+2024,SE,Mulher,Branca,Serviços e comércio,3,37.5
+2024,SE,Mulher,Negra (preta+parda),Dirigentes e gerentes,4,40.0
+2024,SE,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),4,40.0
+2024,SE,Mulher,Negra (preta+parda),Profissionais das ciências e artes,2,20.0
+2024,SE,Mulher,Não informada,Dirigentes e gerentes,3,33.333
+2024,SE,Mulher,Não informada,Produção industrial (bens e serviços),1,11.111
+2024,SE,Mulher,Não informada,Profissionais das ciências e artes,3,33.333
+2024,SE,Mulher,Não informada,Serviços administrativos,1,11.111
+2024,SE,Mulher,Não informada,Serviços e comércio,1,11.111
+2024,SP,Homem,Amarela,Dirigentes e gerentes,1,20.0
+2024,SP,Homem,Amarela,Produção industrial (bens e serviços),1,20.0
+2024,SP,Homem,Amarela,Serviços administrativos,2,40.0
+2024,SP,Homem,Amarela,Serviços e comércio,1,20.0
+2024,SP,Homem,Branca,Dirigentes e gerentes,2,28.571
+2024,SP,Homem,Branca,Produção industrial (bens e serviços),1,14.286
+2024,SP,Homem,Branca,Profissionais das ciências e artes,1,14.286
+2024,SP,Homem,Branca,Serviços administrativos,2,28.571
+2024,SP,Homem,Branca,Serviços e comércio,1,14.286
+2024,SP,Homem,Negra (preta+parda),Dirigentes e gerentes,5,22.727
+2024,SP,Homem,Negra (preta+parda),Produção industrial (bens e serviços),5,22.727
+2024,SP,Homem,Negra (preta+parda),Profissionais das ciências e artes,3,13.636
+2024,SP,Homem,Negra (preta+parda),Serviços administrativos,4,18.182
+2024,SP,Homem,Negra (preta+parda),Serviços e comércio,5,22.727
+2024,SP,Homem,Não informada,Dirigentes e gerentes,3,17.647
+2024,SP,Homem,Não informada,Produção industrial (bens e serviços),3,17.647
+2024,SP,Homem,Não informada,Profissionais das ciências e artes,2,11.765
+2024,SP,Homem,Não informada,Serviços administrativos,5,29.412
+2024,SP,Homem,Não informada,Serviços e comércio,4,23.529
+2024,SP,Mulher,Amarela,Produção industrial (bens e serviços),1,16.667
+2024,SP,Mulher,Amarela,Profissionais das ciências e artes,2,33.333
+2024,SP,Mulher,Amarela,Serviços administrativos,2,33.333
+2024,SP,Mulher,Amarela,Serviços e comércio,1,16.667
+2024,SP,Mulher,Branca,Dirigentes e gerentes,1,33.333
+2024,SP,Mulher,Branca,Profissionais das ciências e artes,1,33.333
+2024,SP,Mulher,Branca,Serviços administrativos,1,33.333
+2024,SP,Mulher,Negra (preta+parda),Dirigentes e gerentes,2,11.111
+2024,SP,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),3,16.667
+2024,SP,Mulher,Negra (preta+parda),Profissionais das ciências e artes,4,22.222
+2024,SP,Mulher,Negra (preta+parda),Serviços administrativos,2,11.111
+2024,SP,Mulher,Negra (preta+parda),Serviços e comércio,7,38.889
+2024,SP,Mulher,Não informada,Dirigentes e gerentes,4,33.333
+2024,SP,Mulher,Não informada,Produção industrial (bens e serviços),2,16.667
+2024,SP,Mulher,Não informada,Serviços administrativos,2,16.667
+2024,SP,Mulher,Não informada,Serviços e comércio,4,33.333
+2024,TO,Homem,Amarela,Dirigentes e gerentes,2,40.0
+2024,TO,Homem,Amarela,Produção industrial (bens e serviços),1,20.0
+2024,TO,Homem,Amarela,Profissionais das ciências e artes,1,20.0
+2024,TO,Homem,Amarela,Serviços administrativos,1,20.0
+2024,TO,Homem,Branca,Dirigentes e gerentes,1,14.286
+2024,TO,Homem,Branca,Produção industrial (bens e serviços),1,14.286
+2024,TO,Homem,Branca,Profissionais das ciências e artes,2,28.571
+2024,TO,Homem,Branca,Serviços administrativos,2,28.571
+2024,TO,Homem,Branca,Serviços e comércio,1,14.286
+2024,TO,Homem,Negra (preta+parda),Dirigentes e gerentes,4,33.333
+2024,TO,Homem,Negra (preta+parda),Produção industrial (bens e serviços),1,8.333
+2024,TO,Homem,Negra (preta+parda),Profissionais das ciências e artes,2,16.667
+2024,TO,Homem,Negra (preta+parda),Serviços administrativos,2,16.667
+2024,TO,Homem,Negra (preta+parda),Serviços e comércio,3,25.0
+2024,TO,Homem,Não informada,Dirigentes e gerentes,3,21.429
+2024,TO,Homem,Não informada,Produção industrial (bens e serviços),1,7.143
+2024,TO,Homem,Não informada,Profissionais das ciências e artes,2,14.286
+2024,TO,Homem,Não informada,Serviços administrativos,2,14.286
+2024,TO,Homem,Não informada,Serviços e comércio,6,42.857
+2024,TO,Mulher,Amarela,Produção industrial (bens e serviços),2,20.0
+2024,TO,Mulher,Amarela,Profissionais das ciências e artes,3,30.0
+2024,TO,Mulher,Amarela,Serviços administrativos,3,30.0
+2024,TO,Mulher,Amarela,Serviços e comércio,2,20.0
+2024,TO,Mulher,Branca,Dirigentes e gerentes,2,33.333
+2024,TO,Mulher,Branca,Produção industrial (bens e serviços),1,16.667
+2024,TO,Mulher,Branca,Serviços administrativos,2,33.333
+2024,TO,Mulher,Branca,Serviços e comércio,1,16.667
+2024,TO,Mulher,Negra (preta+parda),Dirigentes e gerentes,5,26.316
+2024,TO,Mulher,Negra (preta+parda),Produção industrial (bens e serviços),1,5.263
+2024,TO,Mulher,Negra (preta+parda),Profissionais das ciências e artes,8,42.105
+2024,TO,Mulher,Negra (preta+parda),Serviços administrativos,5,26.316
+2024,TO,Mulher,Não informada,Dirigentes e gerentes,2,15.385
+2024,TO,Mulher,Não informada,Produção industrial (bens e serviços),2,15.385
+2024,TO,Mulher,Não informada,Profissionais das ciências e artes,1,7.692
+2024,TO,Mulher,Não informada,Serviços administrativos,6,46.154
+2024,TO,Mulher,Não informada,Serviços e comércio,2,15.385
