@@ -1,0 +1,376 @@
+/* PowerBI-style Green/Black Theme Custom CSS */
+
+:root {
+    --primary-green: #00B450;
+    --primary-green-dark: #009640;
+    --primary-green-light: #2ED573;
+    --bg-dark: #0E1117;
+    --bg-card: #1A1D24;
+    --bg-sidebar: #14171C;
+    --text-primary: #E0E0E0;
+    --text-secondary: #A0A0A0;
+    --text-muted: #707070;
+    --border-color: #2D3139;
+    --accent-orange: #FF9F1C;
+    --accent-red: #FF4757;
+    --accent-blue: #1E90FF;
+}
+
+/* Main app background */
+.stApp {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+    background-color: var(--bg-sidebar);
+    border-right: 1px solid var(--border-color);
+}
+
+section[data-testid="stSidebar"] .stMarkdown,
+section[data-testid="stSidebar"] .stSelectbox label,
+section[data-testid="stSidebar"] .stSlider label,
+section[data-testid="stSidebar"] .stRadio label {
+    color: var(--text-primary) !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary) !important;
+    font-weight: 600;
+}
+
+/* Metric cards */
+div[data-testid="metric-container"] {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+div[data-testid="metric-container"]:hover {
+    border-color: var(--primary-green);
+    box-shadow: 0 4px 16px rgba(0, 180, 80, 0.15);
+    transform: translateY(-2px);
+}
+
+div[data-testid="metric-container"] label {
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+div[data-testid="metric-container"] div[data-testid="metric-value"] {
+    color: var(--primary-green) !important;
+    font-size: 2rem !important;
+    font-weight: 700;
+}
+
+/* Buttons */
+.stButton > button {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-dark) 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 180, 80, 0.3);
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, var(--primary-green-light) 0%, var(--primary-green) 100%);
+    box-shadow: 0 4px 12px rgba(0, 180, 80, 0.4);
+    transform: translateY(-1px);
+}
+
+.stButton > button:active {
+    transform: translateY(0);
+}
+
+/* Selectbox, multiselect, slider */
+.stSelectbox > div > div,
+.stMultiSelect > div > div,
+.stSlider > div > div {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    color: var(--text-primary) !important;
+}
+
+.stSelectbox > div > div:hover,
+.stMultiSelect > div > div:hover {
+    border-color: var(--primary-green) !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background-color: var(--bg-card);
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: transparent !important;
+    color: var(--text-secondary) !important;
+    border-radius: 6px !important;
+    font-weight: 500 !important;
+    padding: 10px 20px !important;
+    transition: all 0.2s ease;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--primary-green) !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(0, 180, 80, 0.3);
+}
+
+/* Dataframe */
+.stDataFrame {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 10px !important;
+}
+
+.stDataFrame [data-testid="stTable"] {
+    color: var(--text-primary) !important;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    color: var(--text-primary) !important;
+}
+
+.streamlit-expanderContent {
+    background-color: var(--bg-dark) !important;
+    border: 1px solid var(--border-color) !important;
+    border-top: none !important;
+    border-radius: 0 0 8px 8px !important;
+}
+
+/* Plotly charts */
+.js-plotly-plot {
+    background-color: var(--bg-card) !important;
+    border-radius: 10px !important;
+    border: 1px solid var(--border-color) !important;
+    padding: 10px !important;
+}
+
+/* Divider */
+hr {
+    border-color: var(--border-color) !important;
+}
+
+/* Info/Warning/Success/Error boxes */
+.stAlert {
+    border-radius: 10px !important;
+    border: none !important;
+}
+
+.stAlert[data-baseweb="notification"] {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border-left: 4px solid var(--primary-green) !important;
+}
+
+.stAlert[data-baseweb="notification"][data-type="warning"] {
+    border-left-color: var(--accent-orange) !important;
+}
+
+.stAlert[data-baseweb="notification"][data-type="error"] {
+    border-left-color: var(--accent-red) !important;
+}
+
+.stAlert[data-baseweb="notification"][data-type="info"] {
+    border-left-color: var(--accent-blue) !important;
+}
+
+/* Radio */
+.stRadio > div {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.stRadio label {
+    color: var(--text-primary) !important;
+}
+
+/* Checkbox */
+.stCheckbox label {
+    color: var(--text-primary) !important;
+}
+
+/* Progress bar */
+.stProgress > div > div {
+    background-color: var(--primary-green) !important;
+}
+
+/* Slider */
+.stSlider [data-baseweb="slider"] {
+    color: var(--primary-green) !important;
+}
+
+/* Tooltip */
+.stTooltipIcon {
+    color: var(--text-secondary) !important;
+}
+
+/* Custom card component */
+.metric-card {
+    background: linear-gradient(145deg, var(--bg-card) 0%, #1E222A 100%);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-green), var(--primary-green-light));
+}
+
+.metric-card:hover {
+    border-color: var(--primary-green);
+    box-shadow: 0 8px 32px rgba(0, 180, 80, 0.1);
+    transform: translateY(-4px);
+}
+
+.metric-card-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.metric-card-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    line-height: 1.2;
+}
+
+.metric-card-delta {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.metric-card-delta.positive {
+    color: var(--primary-green-light);
+}
+
+.metric-card-delta.negative {
+    color: var(--accent-red);
+}
+
+/* Section headers */
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.section-header-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-green), var(--primary-green-dark));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.section-header-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* KPI row */
+.kpi-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+/* Chart container */
+.chart-container {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 40px;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .kpi-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .metric-card-value {
+        font-size: 2rem;
+    }
+}
