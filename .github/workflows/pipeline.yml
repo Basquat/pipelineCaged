@@ -1,0 +1,80 @@
+name: pipeline
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      destroy:
+        type: boolean
+        default: false
+
+env:
+  TF_VAR_aiven_api_token: ${{ secrets.AIVEN_API_TOKEN }}
+  TF_VAR_aiven_project: ${{ vars.AIVEN_PROJECT }}
+  TF_VAR_equipe: ${{ vars.EQUIPE }}
+  TF_HTTP_ADDRESS: ${{ vars.TF_STATE_URL }}
+  TF_HTTP_LOCK_ADDRESS: ${{ vars.TF_STATE_URL }}/lock
+  TF_HTTP_UNLOCK_ADDRESS: ${{ vars.TF_STATE_URL }}/lock
+  TF_HTTP_LOCK_METHOD: POST
+  TF_HTTP_UNLOCK_METHOD: DELETE
+  TF_HTTP_USERNAME: ${{ vars.GITLAB_USER }}
+  TF_HTTP_PASSWORD: ${{ secrets.GITLAB_TOKEN }}
+
+defaults:
+  run:
+    working-directory: infra
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform fmt -check
+      - run: terraform init -backend=false
+      - run: terraform validate
+
+  plan:
+    if: github.event_name == 'pull_request'
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform init
+      - run: terraform plan -input=false
+
+  apply:
+    if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
+    needs: [check, test]
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform init
+      - run: terraform apply -auto-approve -input=false
+
+  destroy:
+    if: github.event_name == 'workflow_dispatch' && inputs.destroy
+    environment: production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+      - run: terraform init
+      - run: terraform destroy -auto-approve -input=false

@@ -1,4 +1,3 @@
-"""Gera um .7z SINTÉTICO no layout oficial para testar o pipeline offline."""
 import numpy as np, pandas as pd
 from pathlib import Path
 from . import config as C
@@ -25,7 +24,7 @@ def gerar(ano=2024, mes=1, n=5000, raw: Path = C.RAW, seed=0):
     })
     raw.mkdir(parents=True, exist_ok=True)
     txt = raw / f"CAGEDMOV{ano}{mes:02d}.txt"
-    df.to_csv(txt, sep=";", index=False, encoding="latin-1")
+    df.to_csv(txt, sep=";", index=False, encoding="utf-8")
     import py7zr
     with py7zr.SevenZipFile(raw / f"CAGEDMOV{ano}{mes:02d}.7z", "w") as z:
         z.write(txt, txt.name)

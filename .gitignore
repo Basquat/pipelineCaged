@@ -1,6 +1,10 @@
 data/raw/*
 data/interim/*
+data/processed/movimentacoes/*
 !data/*/.gitkeep
+data/local.db
 __pycache__/
 .venv/
 *.7z
+.terraform/
+*.tfstate*

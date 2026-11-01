@@ -1,7 +1,3 @@
-"""Lê .7z/.txt brutos, limpa e grava parquet particionado por ano.
-
-Uso: python -m src.clean
-"""
 import re
 import unicodedata
 from pathlib import Path
@@ -15,7 +11,7 @@ def _norm(c: str) -> str:
 
 
 def extrair(arq7z: Path, dest: Path = C.INTERIM) -> Path:
-    import py7zr  # import tardio
+    import py7zr
     dest.mkdir(parents=True, exist_ok=True)
     with py7zr.SevenZipFile(arq7z) as z:
         z.extractall(dest)
@@ -24,10 +20,9 @@ def extrair(arq7z: Path, dest: Path = C.INTERIM) -> Path:
 
 
 def ler_txt(txt: Path, chunksize: int = 1_000_000):
-    """Gera DataFrames já filtrados/renomeados (arquivos têm milhões de linhas)."""
-    cab = pd.read_csv(txt, sep=";", encoding="latin-1", nrows=0).columns
+    cab = pd.read_csv(txt, sep=";", encoding="utf-8", nrows=0).columns
     mapa = {c: C.COLS[_norm(c)] for c in cab if _norm(c) in C.COLS}
-    for ch in pd.read_csv(txt, sep=";", encoding="latin-1", decimal=",",
+    for ch in pd.read_csv(txt, sep=";", encoding="utf-8", decimal=",",
                           usecols=list(mapa), dtype=str, chunksize=chunksize):
         yield ch.rename(columns=mapa)
 
@@ -38,7 +33,7 @@ def limpar(df: pd.DataFrame) -> pd.DataFrame:
     for c in ("saldo", "idade", "horas_contratuais"):
         df[c] = pd.to_numeric(df[c].str.replace(",", ".", regex=False), errors="coerce")
     df["horas_contratuais"] = df["horas_contratuais"].astype("float32")
-    df = df[df["sexo_cod"].isin(C.SEXO)]                     # só Homem/Mulher
+    df = df[df["sexo_cod"].isin(C.SEXO)]
     df = df[df["raca_cor_cod"].isin(C.RACA)]
     df["sexo"] = df["sexo_cod"].map(C.SEXO)
     df["raca_cor"] = df["raca_cor_cod"].map(C.RACA)
@@ -50,8 +45,7 @@ def limpar(df: pd.DataFrame) -> pd.DataFrame:
     df["tipo_mov"] = df["saldo"].map({1: "Admissão", -1: "Desligamento"})
     df["ano"] = df["competencia"].str[:4].astype("int16")
     df["mes"] = df["competencia"].str[4:6].astype("int8")
-    # salário inválido vira NaN (mantém a linha para contagens)
-    df.loc[df["salario"] < C.SALARIO_MIN_VALIDO, "salario"] = pd.NA
+    df.loc[~df["salario"].between(C.SALARIO_MIN_VALIDO, C.SALARIO_MAX_VALIDO), "salario"] = pd.NA
     df["raca_cor_agrupada"] = df["raca_cor"].map(
         {"Branca": "Branca", "Amarela": "Amarela", "Preta": "Negra (preta+parda)",
          "Parda": "Negra (preta+parda)", "Indígena": "Indígena"}).fillna("Não informada")
@@ -67,13 +61,10 @@ def processar(raw: Path = C.RAW, out: Path = C.PROCESSED / "movimentacoes"):
     arqs = sorted(raw.glob("CAGEDMOV*.7z")) + sorted(raw.glob("CAGEDFOR*.7z"))
     for a in arqs:
         txt = extrair(a)
-        partes = [limpar(ch) for ch in ler_txt(txt)]
+        for i, ch in enumerate(ler_txt(txt)):
+            limpar(ch).to_parquet(out / f"{a.stem}_{i}.parquet", index=False)
         txt.unlink(missing_ok=True)
-        if not partes:
-            continue
-        df = pd.concat(partes, ignore_index=True)
-        df.to_parquet(out / f"{a.stem}.parquet", index=False)
-        print(f"[ok] {a.stem}: {len(df):,} linhas")
+        print(f"[ok] {a.stem}")
 
 
 if __name__ == "__main__":

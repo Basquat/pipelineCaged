@@ -1,7 +1,3 @@
-"""Baixa os microdados do Novo CAGED do FTP do PDET (retomável).
-
-Uso: python -m src.download --ini 2023-01 --fim 2024-12
-"""
 import argparse
 import ftplib
 from pathlib import Path
@@ -20,7 +16,7 @@ def meses(ini: str, fim: str):
 def baixar(ini: str, fim: str, tipos=FILE_TYPES, destino: Path = RAW):
     destino.mkdir(parents=True, exist_ok=True)
     ftp = ftplib.FTP(FTP_HOST, timeout=60)
-    ftp.login()  # anônimo
+    ftp.login()
     for ano, mes in meses(ini, fim):
         for t in tipos:
             nome = f"{t}{ano}{mes:02d}.7z"
@@ -35,7 +31,7 @@ def baixar(ini: str, fim: str, tipos=FILE_TYPES, destino: Path = RAW):
                 print(f"[ok]   {nome}")
             except ftplib.error_perm as e:
                 out.unlink(missing_ok=True)
-                print(f"[n/d]  {nome} ({e})")  # mês ainda não publicado / sem arquivo
+                print(f"[n/d]  {nome} ({e})")
     ftp.quit()
 
 

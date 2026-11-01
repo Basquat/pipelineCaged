@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br" style="color-scheme:dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trajetórias até a Liderança</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#000000;color:#F5F5F5;max-width:1200px;margin:auto;padding:24px 16px}
+h1{margin:0;font-size:1.6rem}
+a{color:#3B82F6}
+.sub{color:#A3A3A3;margin:6px 0 20px}
+.card{background:#0A0A0A;border:1px solid #262626;border-radius:8px;padding:20px;margin-bottom:16px;overflow-x:auto}
+form{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;align-items:end}
+label{display:flex;flex-direction:column;gap:6px;font-size:.8rem;font-weight:600;color:#D4D4D4}
+input,select{padding:8px 10px;background:#0A0A0A;color:#F5F5F5;border:1px solid #333333;border-radius:6px;font:inherit;font-weight:400}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid #3B82F6;outline-offset:1px}
+button{padding:8px 14px;border-radius:6px;border:1px solid #3B82F6;font:inherit;font-weight:600;cursor:pointer;background:#3B82F6;color:#fff}
+button[type=reset],td button{background:#0A0A0A;color:#F5F5F5;border-color:#333333;font-weight:400}
+td button.del{color:#F87171}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th{color:#A3A3A3;font-weight:600;font-size:.8rem}
+th,td{border-bottom:1px solid #262626;padding:10px 8px;text-align:left}
+tr:hover td{background:#1A1A1A}
+#erro{color:#F87171;margin:12px 0 0}
+#vazio{color:#A3A3A3;padding:16px 8px}
+</style>
+</head>
+<body>
+<p><a href="/">← Dashboard</a></p>
+<h1>Cadastro de trajetórias</h1>
+<p class="sub">Registros de admissão e chegada à liderança, usados no indicador de tempo até a liderança por sexo e raça/cor.</p>
+<div class="card">
+<form id="f">
+<input type="hidden" name="id">
+<label>Nome<input name="nome" required maxlength="120"></label>
+<label>Sexo<select name="sexo"><option>Homem</option><option>Mulher</option></select></label>
+<label>Raça/cor<select name="raca_cor"><option>Branca</option><option>Preta</option><option>Parda</option><option>Amarela</option><option>Indígena</option></select></label>
+<label>Cargo<input name="cargo" required maxlength="120"></label>
+<label>Salário (R$)<input name="salario" type="number" step="0.01" min="0.01" required></label>
+<label>Admissão<input name="data_admissao" type="date" required></label>
+<label>Chegada à liderança<input name="data_lideranca" type="date"></label>
+<button>Salvar</button>
+<button type="reset">Limpar</button>
+</form>
+<p id="erro" role="alert"></p>
+</div>
+<div class="card">
+<table><thead><tr><th>Nome</th><th>Sexo</th><th>Raça/cor</th><th>Cargo</th><th>Salário</th><th>Admissão</th><th>Liderança</th><th></th></tr></thead><tbody id="t"></tbody></table>
+<p id="vazio" hidden>Nenhuma trajetória cadastrada.</p>
+</div>
+<script>
+const f = document.getElementById("f"), t = document.getElementById("t"), erro = document.getElementById("erro");
+const campos = ["nome", "sexo", "raca_cor", "cargo", "salario", "data_admissao", "data_lideranca"];
+let dados = [];
+async function listar() {
+  dados = await (await fetch("/colaboradores")).json();
+  t.innerHTML = "";
+  document.getElementById("vazio").hidden = dados.length > 0;
+  for (const d of dados) {
+    const tr = t.insertRow();
+    for (const c of campos) tr.insertCell().textContent = c === "salario" ? Number(d[c]).toLocaleString("pt-BR", {style: "currency", currency: "BRL"})
+      : c.startsWith("data") && d[c] ? new Date(d[c] + "T00:00").toLocaleDateString("pt-BR") : d[c] ?? "—";
+    const td = tr.insertCell();
+    td.innerHTML = '<button type="button">Editar</button> <button type="button" class="del">Excluir</button>';
+    td.children[0].onclick = () => { f.id.value = d.id; for (const c of campos) f[c].value = d[c] ?? ""; f.nome.focus(); };
+    td.children[1].onclick = async () => { if (confirm("Excluir " + d.nome + "?")) { await fetch("/colaboradores/" + d.id, {method: "DELETE"}); listar(); } };
+  }
+}
+f.onsubmit = async e => {
+  e.preventDefault();
+  const body = Object.fromEntries(campos.map(c => [c, f[c].value || null]));
+  const r = await fetch("/colaboradores" + (f.id.value ? "/" + f.id.value : ""), {
+    method: f.id.value ? "PUT" : "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify(body)});
+  erro.textContent = r.ok ? "" : JSON.stringify((await r.json()).detail);
+  if (r.ok) { f.reset(); f.id.value = ""; listar(); }
+};
+f.onreset = () => { f.id.value = ""; };
+listar();
+</script>
+</body>
+</html>

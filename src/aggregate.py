@@ -1,18 +1,14 @@
-"""Gera tabelas agregadas (leves) para o dashboard a partir do parquet limpo.
-
-Uso: python -m src.aggregate
-Saídas em data/processed/: agg_gap_salarial.csv, agg_funil_lideranca.csv, agg_perfil_mensal.csv
-"""
 import pandas as pd
 from . import config as C
 
 
 def carregar(pasta=C.PROCESSED / "movimentacoes") -> pd.DataFrame:
-    return pd.read_parquet(pasta)
+    return pd.read_parquet(pasta, columns=["ano", "competencia", "uf", "grande_grupo_nome", "sexo",
+                                          "raca_cor_agrupada", "lideranca", "saldo", "salario"],
+                           read_dictionary=["competencia", "uf", "grande_grupo_nome", "sexo", "raca_cor_agrupada"])
 
 
 def gap_salarial(df: pd.DataFrame) -> pd.DataFrame:
-    """Salário de ADMISSÃO (único com salário confiável no Novo CAGED) por sexo×raça×grupo."""
     adm = df[(df["saldo"] == 1) & df["salario"].notna()]
     g = adm.groupby(["ano", "uf", "grande_grupo_nome", "sexo", "raca_cor_agrupada"], observed=True)
     out = g["salario"].agg(n="count", salario_medio="mean", salario_mediano="median").reset_index()
@@ -20,11 +16,10 @@ def gap_salarial(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def funil_lideranca(df: pd.DataFrame) -> pd.DataFrame:
-    """Participação em cada grande grupo CBO (admissões) e % em liderança, por grupo demográfico."""
     adm = df[df["saldo"] == 1]
     g = adm.groupby(["ano", "uf", "sexo", "raca_cor_agrupada", "grande_grupo_nome"], observed=True)
     out = g.size().rename("admissoes").reset_index()
-    tot = out.groupby(["ano", "uf", "sexo", "raca_cor_agrupada"])["admissoes"].transform("sum")
+    tot = out.groupby(["ano", "uf", "sexo", "raca_cor_agrupada"], observed=True)["admissoes"].transform("sum")
     out["pct_no_grupo_demografico"] = (out["admissoes"] / tot * 100).round(3)
     return out
 

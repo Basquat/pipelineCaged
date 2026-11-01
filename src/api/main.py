@@ -1,89 +1,91 @@
-from fastapi import FastAPI, Depends, Query
-from typing import List, Optional
-import pandas as pd
-
-from src.api.models import (
-    GapSalarialResponse,
-    FunilLiderancaResponse,
-    PerfilMensalResponse,
-    HealthResponse,
-)
-from src.api.dependencies import (
-    get_gap_salarial,
-    get_funil_lideranca,
-    get_perfil_mensal,
-)
-
-app = FastAPI(
-    title="Novo CAGED API",
-    description="API para dados agregados do Novo CAGED - Gap Salarial e Funil de Liderança",
-    version="1.0.0",
-)
+from contextlib import asynccontextmanager
+from datetime import date
+from pathlib import Path
+from typing import Literal, Optional
+from fastapi import FastAPI, HTTPException, Response
+from fastapi.responses import FileResponse
+from pydantic import BaseModel, Field, model_validator
+from sqlalchemy import select, text
+from sqlalchemy.exc import OperationalError
+from src.db import AGREGADOS, colaboradores as T, engine, ler, meta
 
 
-@app.get("/health", response_model=HealthResponse)
-def health():
-    return HealthResponse(status="ok")
+@asynccontextmanager
+async def lifespan(_):
+    try:
+        meta.create_all(engine)
+    except OperationalError:
+        pass
+    yield
 
 
-@app.get("/gap-salarial", response_model=List[GapSalarialResponse])
-def gap_salarial(
-    ano: Optional[int] = Query(None, description="Filtrar por ano"),
-    uf: Optional[str] = Query(None, description="Filtrar por UF (ex: SP, RJ)"),
-    sexo: Optional[str] = Query(None, description="Filtrar por sexo (Homem, Mulher)"),
-    raca: Optional[str] = Query(None, description="Filtrar por raça agrupada"),
-    df: pd.DataFrame = Depends(get_gap_salarial),
-):
-    result = df.copy()
-    if ano:
-        result = result[result["ano"] == ano]
-    if uf:
-        result = result[result["uf"] == uf.upper()]
-    if sexo:
-        result = result[result["sexo"] == sexo]
-    if raca:
-        result = result[result["raca_cor_agrupada"] == raca]
-    return result.to_dict(orient="records")
+app = FastAPI(title="Trajetórias até a Liderança", lifespan=lifespan)
 
 
-@app.get("/funil-lideranca", response_model=List[FunilLiderancaResponse])
-def funil_lideranca(
-    ano: Optional[int] = Query(None, description="Filtrar por ano"),
-    uf: Optional[str] = Query(None, description="Filtrar por UF"),
-    sexo: Optional[str] = Query(None, description="Filtrar por sexo"),
-    raca: Optional[str] = Query(None, description="Filtrar por raça agrupada"),
-    df: pd.DataFrame = Depends(get_funil_lideranca),
-):
-    result = df.copy()
-    if ano:
-        result = result[result["ano"] == ano]
-    if uf:
-        result = result[result["uf"] == uf.upper()]
-    if sexo:
-        result = result[result["sexo"] == sexo]
-    if raca:
-        result = result[result["raca_cor_agrupada"] == raca]
-    return result.to_dict(orient="records")
+class Colaborador(BaseModel):
+    nome: str = Field(min_length=1, max_length=120)
+    sexo: Literal["Homem", "Mulher"]
+    raca_cor: Literal["Branca", "Preta", "Parda", "Amarela", "Indígena"]
+    cargo: str = Field(min_length=1, max_length=120)
+    salario: float = Field(gt=0)
+    data_admissao: date
+    data_lideranca: Optional[date] = None
+
+    @model_validator(mode="after")
+    def datas(self):
+        if self.data_lideranca and self.data_lideranca < self.data_admissao:
+            raise ValueError("data_lideranca anterior à data_admissao")
+        return self
 
 
-@app.get("/perfil-mensal", response_model=List[PerfilMensalResponse])
-def perfil_mensal(
-    competencia: Optional[str] = Query(None, description="Filtrar por competência (YYYYMM)"),
-    uf: Optional[str] = Query(None, description="Filtrar por UF"),
-    sexo: Optional[str] = Query(None, description="Filtrar por sexo"),
-    raca: Optional[str] = Query(None, description="Filtrar por raça agrupada"),
-    lideranca: Optional[bool] = Query(None, description="Filtrar por liderança"),
-    df: pd.DataFrame = Depends(get_perfil_mensal),
-):
-    result = df.copy()
-    if competencia:
-        result = result[result["competencia"] == competencia]
-    if uf:
-        result = result[result["uf"] == uf.upper()]
-    if sexo:
-        result = result[result["sexo"] == sexo]
-    if raca:
-        result = result[result["raca_cor_agrupada"] == raca]
-    if lideranca is not None:
-        result = result[result["lideranca"] == lideranca]
-    return result.to_dict(orient="records")
+@app.get("/", include_in_schema=False)
+def dashboard():
+    return FileResponse(Path(__file__).with_name("dashboard.html"))
+
+
+@app.get("/cadastro", include_in_schema=False)
+def cadastro():
+    return FileResponse(Path(__file__).with_name("cadastro.html"))
+
+
+@app.get("/api/agregados")
+def agregados():
+    return {t.name: ler(t.name).to_dict("records") for t in AGREGADOS}
+
+
+@app.get("/healthz")
+def healthz(response: Response):
+    try:
+        with engine.connect() as c:
+            c.execute(text("select 1"))
+        return {"status": "ok"}
+    except Exception:
+        response.status_code = 503
+        return {"status": "indisponivel"}
+
+
+@app.get("/colaboradores")
+def listar():
+    with engine.connect() as c:
+        return [dict(r._mapping) for r in c.execute(select(T).order_by(T.c.id))]
+
+
+@app.post("/colaboradores", status_code=201)
+def criar(d: Colaborador):
+    with engine.begin() as c:
+        return {"id": c.execute(T.insert().values(**d.model_dump()).returning(T.c.id)).scalar_one()}
+
+
+@app.put("/colaboradores/{id}")
+def editar(id: int, d: Colaborador):
+    with engine.begin() as c:
+        if not c.execute(T.update().where(T.c.id == id).values(**d.model_dump())).rowcount:
+            raise HTTPException(404)
+    return {"id": id}
+
+
+@app.delete("/colaboradores/{id}", status_code=204)
+def excluir(id: int):
+    with engine.begin() as c:
+        if not c.execute(T.delete().where(T.c.id == id)).rowcount:
+            raise HTTPException(404)

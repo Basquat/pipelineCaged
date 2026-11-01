@@ -1,4 +1,3 @@
-"""Testa limpeza + agregação sem precisar de 7z/parquet (lógica pura em pandas)."""
 import pandas as pd
 import numpy as np
 from src import clean, aggregate, config as C
@@ -17,7 +16,7 @@ def _txt(tmp_path, n=5000):
         "salário": [f"{x:.2f}".replace(".", ",") for x in rng.lognormal(7.5, .6, n)],
         "tamestabjan": "5", "indicadordeforadoprazo": "0", "município": "292740"})
     p = tmp_path / "x.txt"
-    df.to_csv(p, sep=";", index=False, encoding="latin-1")
+    df.to_csv(p, sep=";", index=False, encoding="utf-8")
     return p
 
 
@@ -27,7 +26,7 @@ def test_limpeza_e_agregacao(tmp_path):
     assert set(df["sexo"]) <= {"Homem", "Mulher"}
     assert df["salario"].dropna().min() >= 100
     assert df.loc[df.cbo_grande_grupo == "1", "lideranca"].all()
-    assert df["cbo"].str.len().eq(6).all()          # '41010' -> '041010'
+    assert df["cbo"].str.len().eq(6).all()
     g = aggregate.gap_salarial(df)
     assert {"salario_medio", "n"} <= set(g.columns)
     f = aggregate.funil_lideranca(df)

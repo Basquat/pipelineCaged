@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-br" style="color-scheme:dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GAP Salarial e Funil de Liderança</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
+<style>
+:root{--bg:#000000;--card:#111111;--line:#262626;--tx:#F5F5F5;--mut:#A3A3A3;--acc:#3B82F6;--pos:#34D399;--neg:#F87171}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--tx);background:var(--bg);display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+aside{background:var(--card);border-right:1px solid var(--line);padding:24px 18px;position:sticky;top:0;height:100vh;overflow:auto}
+aside strong{display:block;font-size:1rem;margin-bottom:8px}
+aside label{display:block;font-size:.8rem;font-weight:600;color:var(--mut);margin:20px 0 8px}
+select{width:100%;padding:8px;border-radius:6px;background:#0A0A0A;color:var(--tx);border:1px solid #333333;font:inherit}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{padding:5px 10px;border-radius:6px;border:1px solid #333333;background:#0A0A0A;color:var(--tx);font:inherit;font-size:.82rem;cursor:pointer}
+.chip[aria-pressed=true]{background:#0F1E3D;border-color:var(--acc);color:var(--acc)}
+button:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.reset{margin-top:20px;width:100%;padding:8px;border-radius:6px;border:1px solid #333333;background:#0A0A0A;font:inherit;cursor:pointer}
+aside a{display:block;margin-top:10px;padding:9px;border-radius:6px;text-align:center;background:var(--acc);color:#fff;text-decoration:none;font-weight:600}
+main{padding:28px 32px;min-width:0}
+header h1{margin:0;font-size:1.6rem}
+header p{color:var(--mut);margin:6px 0 0}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:22px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px}
+.kpi small{color:var(--mut);font-size:.78rem}
+.kpi b{display:block;font-size:1.5rem;margin:6px 0 2px}
+.kpi span{font-size:.76rem;color:var(--mut)}
+.pos{color:var(--pos)}.neg{color:var(--neg)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px 18px;min-width:0}
+.card h2{margin:0;font-size:.95rem}
+.card p{margin:2px 0 8px;font-size:.8rem;color:var(--mut)}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.c{height:320px}.c.tall{height:440px}
+.s4{grid-column:span 4}.s5{grid-column:span 5}.s6{grid-column:span 6}.s7{grid-column:span 7}.s8{grid-column:span 8}.s12{grid-column:span 12}
+footer{color:var(--mut);font-size:.78rem;margin-top:20px}
+@media(max-width:1200px){.kpis{grid-template-columns:repeat(3,1fr)}.grid>*{grid-column:span 12}}
+@media(max-width:800px){body{grid-template-columns:1fr}aside{position:static;height:auto}main{padding:20px 16px}.kpis{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<aside>
+<strong>Filtros</strong>
+<label for="ano">Ano</label><select id="ano"></select>
+<label for="uf">UF</label><select id="uf"><option value="">Brasil (todas)</option></select>
+<label>Sexo</label><div class="chips" id="sexo"></div>
+<label>Raça/cor</label><div class="chips" id="raca"></div>
+<label for="cbo">Grande grupo ocupacional</label><select id="cbo"><option value="">Todos</option></select>
+<button class="reset" id="reset">Limpar filtros</button>
+<a href="/cadastro">Cadastro de trajetórias</a>
+</aside>
+<main>
+<header>
+<h1>GAP Salarial e Funil de Liderança</h1>
+<p id="meta"></p>
+</header>
+<section class="kpis" id="kpis"></section>
+<section class="grid">
+<div class="card s5"><h2>Salário médio de admissão por sexo e raça/cor</h2><p>R$ · clique numa célula para filtrar</p><div class="c" id="heat"></div></div>
+<div class="card s7"><h2>Diferença salarial em relação ao homem branco</h2><p>salário médio de admissão de cada grupo</p><div class="c" id="rel"></div></div>
+<div class="card s12"><h2>Salário médio por grande grupo ocupacional</h2><p>R$ · use a legenda para escolher os grupos comparados</p><div class="c tall" id="cbochart"></div></div>
+<div class="card s6"><h2>Acesso a cargos de liderança</h2><p>% das admissões em direção e gerência (CBO grande grupo 1)</p><div class="c" id="lid"></div></div>
+<div class="card s6"><h2>Gap de gênero por UF</h2><p>salário das mulheres em relação aos homens · clique numa UF para filtrar</p><div class="c" id="ufchart"></div></div>
+<div class="card s8"><div class="head"><div><h2>Evolução mensal</h2><p id="mesdesc">saldo de empregos (admissões − desligamentos)</p></div>
+<div class="chips"><button class="chip" data-m="saldo" aria-pressed="true">Saldo</button><button class="chip" data-m="movs" aria-pressed="false">Movimentações</button><button class="chip" id="solid" aria-pressed="false">Só liderança</button></div></div>
+<div class="c" id="mes"></div></div>
+<div class="card s4"><h2>Tempo até a liderança</h2><p>média de anos entre admissão e liderança (cadastro)</p><div class="c" id="asc"></div></div>
+</section>
+<footer>Fonte: Novo CAGED (MTE/PDET). Salário de admissão; valores fora de R$ 100 a R$ 150 mil desconsiderados. O tempo até a liderança vem do cadastro de trajetórias, pois o CAGED público não identifica o trabalhador.</footer>
+</main>
+<script>
+const COR = {"Homem · Branca":"#A0CBE8","Homem · Negra (preta+parda)":"#4E79A7","Homem · Amarela":"#76B7B2","Homem · Indígena":"#59A14F","Homem · Não informada":"#9CA3AF","Mulher · Branca":"#E15759","Mulher · Negra (preta+parda)":"#F28E2B","Mulher · Amarela":"#EDC948","Mulher · Indígena":"#B07AA1","Mulher · Não informada":"#BAB0AC"};
+const REF = "Homem · Branca", MN = "Mulher · Negra (preta+parda)", LID = "Dirigentes e gerentes";
+const PRINC = [REF, MN, "Mulher · Branca", "Homem · Negra (preta+parda)"];
+const $ = id => document.getElementById(id);
+const br = (v, d = 0) => v == null || isNaN(v) ? "—" : v.toLocaleString("pt-BR", {minimumFractionDigits: d, maximumFractionDigits: d});
+const pct = v => isNaN(v) ? "—" : (v > 0 ? "+" : "") + br(v, 1) + "%";
+const curto = s => s.replace(" (preta+parda)", "");
+const grupo = r => r.sexo + " · " + r.raca_cor_agrupada;
+const uniq = a => [...new Set(a)].sort((x, y) => x.localeCompare(y, "pt-BR"));
+const F = {ano: "", uf: "", cbo: "", sexo: new Set(), raca: new Set(), m: "saldo", lid: false};
+let A, C = [], ALL = {};
+const charts = {};
+const base = {animation: false, textStyle: {fontFamily: "system-ui, sans-serif", color: "#D4D4D4"},
+  tooltip: {backgroundColor: "#171717", borderColor: "#262626", textStyle: {color: "#F5F5F5"}},
+  grid: {left: 8, right: 40, top: 12, bottom: 8, containLabel: true}};
+const ax = {axisLine: {lineStyle: {color: "#333333"}}, axisTick: {show: false}, splitLine: {lineStyle: {color: "#1A1A1A"}}, axisLabel: {color: "#A3A3A3"}};
+const leg = {type: "scroll", textStyle: {color: "#D4D4D4"}, icon: "roundRect", itemWidth: 10, itemHeight: 10, formatter: curto};
+function draw(id, opt) { charts[id] ??= echarts.init($(id)); charts[id].setOption({...base, ...opt}, true); return charts[id]; }
+
+function filtra(rows, {uf = true, cbo = false} = {}) {
+  return rows.filter(r => String(r.ano ?? r.competencia.slice(0, 4)) === F.ano && F.sexo.has(r.sexo) && F.raca.has(r.raca_cor_agrupada)
+    && (!uf || !F.uf || r.uf === F.uf) && (!cbo || !F.cbo || r.grande_grupo_nome === F.cbo));
+}
+function sal(rows, key = () => "_") {
+  const m = {};
+  for (const r of rows) { const k = key(r); (m[k] ??= {t: 0, n: 0}); m[k].t += r.salario_medio * r.n; m[k].n += r.n; }
+  return Object.fromEntries(Object.entries(m).map(([k, o]) => [k, {v: o.t / o.n, n: o.n}]));
+}
+const v = o => o ? o.v : NaN;
+const dif = (a, b) => (a / b - 1) * 100;
+const barra = (cor, dados) => ({type: "bar", barMaxWidth: 18, itemStyle: {borderRadius: 2}, data: dados, color: cor});
+
+function chips(id, vals, set) {
+  $(id).innerHTML = "";
+  for (const x of vals) {
+    const b = document.createElement("button");
+    b.className = "chip"; b.textContent = curto(x); b.setAttribute("aria-pressed", set.has(x));
+    b.onclick = () => { set.has(x) ? set.delete(x) : set.add(x); b.setAttribute("aria-pressed", set.has(x)); render(); };
+    $(id).append(b);
+  }
+}
+
+function render() {
+  const g = filtra(A.agg_gap_salarial, {cbo: true}), f = filtra(A.agg_funil_lideranca), m = filtra(A.agg_perfil_mensal);
+  const sg = sal(g, grupo), total = sal(g)._;
+  const lidT = f.reduce((s, r) => s + (r.grande_grupo_nome === LID ? r.admissoes : 0), 0), admT = f.reduce((s, r) => s + r.admissoes, 0);
+  const saldo = m.reduce((s, r) => s + r.saldo, 0), movs = m.reduce((s, r) => s + r.movs, 0);
+  const k = [
+    ["Salário médio de admissão", "R$ " + br(v(total)), "média ponderada por admissões"],
+    ["Gap de gênero", dif(v(sal(g.filter(r => r.sexo === "Mulher"))._), v(sal(g.filter(r => r.sexo === "Homem"))._)), "mulheres vs homens"],
+    ["Gap racial", dif(v(sal(g.filter(r => r.raca_cor_agrupada.startsWith("Negra")))._), v(sal(g.filter(r => r.raca_cor_agrupada === "Branca"))._)), "pessoas negras vs brancas"],
+    ["Gap interseccional", dif(v(sg[MN]), v(sg[REF])), "mulheres negras vs homens brancos"],
+    ["Admissões em liderança", br(lidT / admT * 100, 2) + "%", br(lidT) + " dirigentes e gerentes"],
+    ["Saldo de empregos", (saldo > 0 ? "+" : "") + br(saldo), br(movs) + " movimentações"]];
+  $("kpis").innerHTML = k.map(([t, val, n]) => typeof val === "number"
+    ? `<div class="kpi"><small>${t}</small><b class="${val < 0 ? "neg" : "pos"}">${pct(val)}</b><span>${n}</span></div>`
+    : `<div class="kpi"><small>${t}</small><b>${val}</b><span>${n}</span></div>`).join("");
+
+  const sx = uniq(g.map(r => r.sexo)), rc = uniq(g.map(r => r.raca_cor_agrupada)), hm = sal(g, r => r.sexo + "|" + r.raca_cor_agrupada);
+  const hd = []; sx.forEach((s, y) => rc.forEach((r, x) => hm[s + "|" + r] && hd.push([x, y, Math.round(hm[s + "|" + r].v), hm[s + "|" + r].n])));
+  draw("heat", {tooltip: {...base.tooltip, formatter: p => `${sx[p.value[1]]} · ${rc[p.value[0]]}<br><b>R$ ${br(p.value[2])}</b><br>${br(p.value[3])} admissões`},
+    xAxis: {type: "category", data: rc.map(curto), ...ax, splitLine: {show: false}, axisLabel: {color: "#A3A3A3", interval: 0}},
+    yAxis: {type: "category", data: sx, ...ax, splitLine: {show: false}},
+    visualMap: {show: false, dimension: 2, min: Math.min(...hd.map(d => d[2])), max: Math.max(...hd.map(d => d[2])), inRange: {color: ["#0F1E3D", "#1E40AF", "#3B82F6"]}},
+    series: [{type: "heatmap", data: hd, label: {show: true, color: "#F5F5F5", formatter: p => br(p.value[2])}, itemStyle: {borderColor: "#000000", borderWidth: 2}}]})
+    .off("click").on("click", p => { F.sexo = new Set([sx[p.value[1]]]); F.raca = new Set([rc[p.value[0]]]); sync(); });
+
+  const rel = Object.keys(sg).filter(x => x !== REF && sg[REF]).map(x => [x, dif(sg[x].v, sg[REF].v)]).sort((a, b) => b[1] - a[1]);
+  draw("rel", {xAxis: {type: "value", ...ax, axisLabel: {color: "#A3A3A3", formatter: x => x + "%"}}, yAxis: {type: "category", data: rel.map(r => curto(r[0])), ...ax},
+    tooltip: {...base.tooltip, formatter: p => `${p.name}<br><b>${pct(p.value)}</b>`},
+    series: [{...barra(null, rel.map(r => ({value: +r[1].toFixed(2), itemStyle: {color: r[1] < 0 ? "#F87171" : "#34D399", borderRadius: 2}}))),
+      label: {show: true, position: "right", color: "#D4D4D4", formatter: p => pct(p.value)}}]});
+
+  const cbos = Object.entries(sal(g, r => r.grande_grupo_nome)).sort((a, b) => a[1].v - b[1].v).map(e => e[0]);
+  const gs = Object.keys(sg).sort(), sc = sal(g, r => grupo(r) + "|" + r.grande_grupo_nome);
+  draw("cbochart", {legend: {...leg, top: 0, selected: Object.fromEntries(gs.map(x => [x, PRINC.includes(x)]))},
+    grid: {...base.grid, top: 36}, tooltip: {...base.tooltip, trigger: "axis", axisPointer: {type: "shadow"}, valueFormatter: x => "R$ " + br(x)},
+    xAxis: {type: "value", ...ax}, yAxis: {type: "category", data: cbos, ...ax},
+    series: gs.map(x => ({name: x, ...barra(COR[x], cbos.map(c => sc[x + "|" + c] ? Math.round(sc[x + "|" + c].v) : null))}))});
+
+  const lg = {}; for (const r of f) { const k = grupo(r); (lg[k] ??= {l: 0, t: 0}); lg[k].t += r.admissoes; if (r.grande_grupo_nome === LID) lg[k].l += r.admissoes; }
+  const lr = Object.entries(lg).map(([k, o]) => [k, o.l / o.t * 100, o.l]).sort((a, b) => a[1] - b[1]);
+  draw("lid", {xAxis: {type: "value", ...ax, axisLabel: {color: "#A3A3A3", formatter: x => x + "%"}}, yAxis: {type: "category", data: lr.map(r => curto(r[0])), ...ax},
+    tooltip: {...base.tooltip, formatter: p => `${p.name}<br><b>${br(p.value, 2)}%</b> das admissões<br>${br(lr[p.dataIndex][2])} em liderança`},
+    series: [{...barra(null, lr.map(r => ({value: +r[1].toFixed(3), itemStyle: {color: COR[r[0]], borderRadius: 2}}))),
+      label: {show: true, position: "right", color: "#D4D4D4", formatter: p => br(p.value, 2) + "%"}}]});
+
+  const gu = filtra(A.agg_gap_salarial, {uf: false, cbo: true}), su = sal(gu, r => r.uf + "|" + r.sexo);
+  const ur = uniq(gu.map(r => r.uf)).filter(u => su[u + "|Homem"] && su[u + "|Mulher"]).map(u => [u, dif(su[u + "|Mulher"].v, su[u + "|Homem"].v)]).sort((a, b) => a[1] - b[1]);
+  draw("ufchart", {xAxis: {type: "category", data: ur.map(r => r[0]), ...ax, axisLabel: {color: "#A3A3A3", interval: 0, fontSize: 10}},
+    yAxis: {type: "value", ...ax, axisLabel: {color: "#A3A3A3", formatter: x => x + "%"}},
+    tooltip: {...base.tooltip, formatter: p => `${p.name}<br><b>${pct(p.value)}</b>`},
+    series: [barra(null, ur.map(r => ({value: +r[1].toFixed(2), itemStyle: {borderRadius: 2, color: r[0] === F.uf ? "#F5F5F5" : "#3B82F6"}})))]})
+    .off("click").on("click", p => { F.uf = F.uf === p.name ? "" : p.name; sync(); });
+
+  const mm = F.lid ? m.filter(r => r.lideranca) : m, comps = uniq(mm.map(r => r.competencia)), ms = {};
+  for (const r of mm) { const k = grupo(r); (ms[k] ??= {}); ms[k][r.competencia] = (ms[k][r.competencia] || 0) + r[F.m]; }
+  $("mesdesc").textContent = (F.m === "saldo" ? "saldo de empregos (admissões − desligamentos)" : "admissões + desligamentos") + (F.lid ? " em cargos de liderança" : "");
+  draw("mes", {legend: {...leg, top: 0, selected: Object.fromEntries(Object.keys(ms).map(x => [x, PRINC.includes(x)]))}, grid: {...base.grid, top: 36},
+    tooltip: {...base.tooltip, trigger: "axis", valueFormatter: x => br(x)},
+    xAxis: {type: "category", data: comps.map(c => c.slice(4) + "/" + c.slice(2, 4)), ...ax}, yAxis: {type: "value", ...ax},
+    series: Object.keys(ms).sort().map(k => ({name: k, type: "line", symbol: "circle", symbolSize: 5, color: COR[k], data: comps.map(c => ms[k][c] ?? 0)}))});
+
+  const asc = {};
+  for (const c of C) if (c.data_lideranca && F.sexo.has(c.sexo)) { const k = c.sexo + " · " + c.raca_cor; (asc[k] ??= []).push((new Date(c.data_lideranca) - new Date(c.data_admissao)) / 31557600000); }
+  const ar = Object.entries(asc).map(([k, a]) => [k, a.reduce((s, x) => s + x, 0) / a.length, a.length]).sort((a, b) => a[1] - b[1]);
+  draw("asc", ar.length ? {xAxis: {type: "value", ...ax}, yAxis: {type: "category", data: ar.map(r => r[0]), ...ax},
+    tooltip: {...base.tooltip, formatter: p => `${p.name}<br><b>${br(p.value, 1)} anos</b><br>${ar[p.dataIndex][2]} trajetórias`},
+    series: [{...barra("#3B82F6", ar.map(r => +r[1].toFixed(2))), label: {show: true, position: "right", color: "#D4D4D4", formatter: p => br(p.value, 1) + " anos"}}]}
+    : {title: {text: "Nenhuma trajetória com liderança cadastrada", left: "center", top: "middle", textStyle: {color: "#A3A3A3", fontSize: 13, fontWeight: 400}}, series: []});
+}
+
+function meta() {
+  const n = A.agg_gap_salarial.filter(r => String(r.ano) === F.ano).reduce((s, r) => s + r.n, 0);
+  $("meta").textContent = `Novo CAGED ${F.ano} · ${br(n)} admissões com salário informado · recorte sexo × raça/cor (ODS 5 e ODS 18)`;
+}
+function sync() {
+  $("uf").value = F.uf; $("cbo").value = F.cbo;
+  chips("sexo", ALL.sexo, F.sexo); chips("raca", ALL.raca, F.raca); render();
+}
+function reset() { F.uf = ""; F.cbo = ""; F.sexo = new Set(ALL.sexo); F.raca = new Set(ALL.raca.filter(r => r !== "Não informada")); sync(); }
+
+document.querySelectorAll("[data-m]").forEach(b => b.onclick = () => { F.m = b.dataset.m; document.querySelectorAll("[data-m]").forEach(x => x.setAttribute("aria-pressed", x === b)); render(); });
+$("solid").onclick = e => { F.lid = !F.lid; e.target.setAttribute("aria-pressed", F.lid); render(); };
+$("ano").onchange = e => { F.ano = e.target.value; meta(); render(); };
+$("uf").onchange = e => { F.uf = e.target.value; render(); };
+$("cbo").onchange = e => { F.cbo = e.target.value; render(); };
+$("reset").onclick = reset;
+addEventListener("resize", () => Object.values(charts).forEach(c => c.resize()));
+
+(async () => {
+  [A, C] = await Promise.all([fetch("/api/agregados").then(r => r.json()), fetch("/colaboradores").then(r => r.json())]);
+  const g = A.agg_gap_salarial;
+  ALL = {sexo: uniq(g.map(r => r.sexo)), raca: uniq(g.map(r => r.raca_cor_agrupada))};
+  for (const a of uniq(g.map(r => String(r.ano))).reverse()) $("ano").add(new Option(a, a));
+  for (const u of uniq(g.map(r => r.uf))) $("uf").add(new Option(u, u));
+  for (const c of uniq(g.map(r => r.grande_grupo_nome))) $("cbo").add(new Option(c, c));
+  F.ano = $("ano").value; meta();
+  reset();
+})();
+</script>
+</body>
+</html>
