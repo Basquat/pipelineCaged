@@ -163,3 +163,10 @@ por inatividade, que exige religar o serviço pelo console antes da demonstraç�
 - Meses recentes são revisados por declarações fora do prazo (`CAGEDFOR`).
 
 Fonte: `ftp://ftp.mtps.gov.br/pdet/microdados/NOVO CAGED/{ano}/{ano}{mes}/CAGEDMOV{ano}{mes}.7z`
+
+
+alunos:
+
+João Daniel De Cerqueira Lisboa 
+
+Gabriel Coelho de Jesus Lopes
