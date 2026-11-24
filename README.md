@@ -164,6 +164,27 @@ por inatividade, que exige religar o serviço pelo console antes da demonstraç�
 
 Fonte: `ftp://ftp.mtps.gov.br/pdet/microdados/NOVO CAGED/{ano}/{ano}{mes}/CAGEDMOV{ano}{mes}.7z`
 
+## Como rodar com Docker (Local)
+
+1. Copie o arquivo de exemplo de variáveis de ambiente:
+```bash
+cp .env.example .env
+```
+
+2. Suba o banco PostgreSQL e a API:
+```bash
+docker compose up --build
+```
+
+3. Acesse:
+- **Aplicação / API:** http://localhost:8000
+- **Documentação (Swagger):** http://localhost:8000/docs
+- **PostgreSQL (para DBeaver/pgAdmin):** `localhost:5432` | usuário: `postgres` | senha: `postgres` | banco: `caged_db`
+
+## Ambiente em Produção (Render)
+- **URL Pública:** https://caged-api.onrender.com/
+- **Swagger:** https://caged-api.onrender.com/docs
+- O deploy é automático a cada `git push` na branch `master`.
 
 alunos:
 
