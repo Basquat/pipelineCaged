@@ -179,7 +179,7 @@ docker compose up --build
 3. Acesse:
 - **Aplicação / API:** http://localhost:8000
 - **Documentação (Swagger):** http://localhost:8000/docs
-- **PostgreSQL (para DBeaver/pgAdmin):** `localhost:5432` | usuário: `postgres` | senha: `postgres` | banco: `caged_db`
+- **PostgreSQL (para DBeaver/pgAdmin):** `localhost:5432` | usuário: `postgress` | senha: `postgres` | banco: `caged_db`
 
 ## Ambiente em Produção (Render)
 - **URL Pública:** https://caged-api.onrender.com/
