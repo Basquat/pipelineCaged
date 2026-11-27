@@ -181,10 +181,11 @@ docker compose up --build
 - **Documentação (Swagger):** http://localhost:8000/docs
 - **PostgreSQL (para DBeaver/pgAdmin):** `localhost:5432` | usuário: `postgress` | senha: `postgres` | banco: `caged_db`
 
-## Ambiente em Produção (Render)
-- **URL Pública:** https://caged-api.onrender.com/
-- **Swagger:** https://caged-api.onrender.com/docs
-- O deploy é automático a cada `git push` na branch `master`.
+## Ambiente em Produção (Render + Aiven)
+* **URL Pública:** https://caged-api.onrender.com/
+* **Swagger:** https://caged-api.onrender.com/docs
+* **Banco de Dados:** PostgreSQL gerenciado na **Aiven** (conectado via `AIVEN_DB_URL`)
+* O deploy é automático a cada `git push` na branch `master`.
 
 alunos:
 
