@@ -1,0 +1,27 @@
+name: Migrar Banco Render para Aiven
+on: workflow_dispatch
+jobs:
+  migrar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copiar tabelas do Render para a Aiven
+        env:
+          SRC_URL: ${{ secrets.RENDER_DB_URL }}
+          DST_URL: ${{ secrets.AIVEN_MIGRATION_URL }}
+        run: |
+          pip install sqlalchemy psycopg[binary]
+          python -c "
+          import os
+          from sqlalchemy import create_engine, MetaData, insert
+          src = create_engine(os.environ['SRC_URL'])
+          dst = create_engine(os.environ['DST_URL'].replace('postgres://', 'postgresql+psycopg://', 1))
+          meta = MetaData()
+          meta.reflect(bind=src)
+          meta.create_all(bind=dst)
+          with src.connect() as s_conn, dst.begin() as d_conn:
+              for nome, tabela in meta.tables.items():
+                  linhas = s_conn.execute(tabela.select()).mappings().all()
+                  if linhas:
+                      d_conn.execute(insert(tabela), linhas)
+                  print(f'Migrada: {nome} ({len(linhas)} linhas)')
+          "
